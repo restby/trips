@@ -35,8 +35,6 @@
   }
 }
 
-// .page-footer__nav {}
-
 .page-footer__link {
   @include hover-focus {
     color: $text-active;
@@ -72,7 +70,6 @@
       margin-left: 5px;
       text-align: left;
     }
-
   }
 }
 
