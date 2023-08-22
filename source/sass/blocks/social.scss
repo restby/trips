@@ -1,0 +1,39 @@
+.social {
+  margin: 0;
+  margin-bottom: 18px;
+  margin-top: 16px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 15px;
+
+
+  // & li {}
+
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba($color-dark, 0.3);
+
+    @include hover-focus {
+      border: 1px solid $color-dark;
+
+      @include active {
+        color: $text-light;
+        background-color: $color-main;
+        border: 1px solid $color-main;
+      }
+    }
+
+    &--disabled {
+      border: 1px solid $color-dark;
+      opacity: 0.3;
+    }
+  }
+}

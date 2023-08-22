@@ -1,13 +1,11 @@
 // Vendor
 // ---------------------------------
-
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -15,14 +13,19 @@
 @import "global/utils";
 @import "global/container";
 
+// Modules
+// ---------------------------------
+@import "modules/header-example";
+
 // Blocks
 // ---------------------------------
-
 @import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/logo";
+@import "blocks/nav";
+
+
+@import "blocks/page-footer";
+@import "blocks/social";
 
 // ---------------------------------
 
