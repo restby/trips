@@ -19,6 +19,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-1199 {
+    align-items: start;
+  }
 }
 
 .page-footer__logo {

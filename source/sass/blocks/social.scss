@@ -24,6 +24,7 @@
 
     @include hover-focus {
       border: 1px solid $color-dark;
+      outline: none;
 
       @include active {
         color: $text-light;
