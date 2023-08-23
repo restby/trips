@@ -4,6 +4,14 @@
   transform: translateY(40px);
   transition: transform 0.3s ease, background-color 0.3s ease;
 
+  @include vp-1199 {
+    transform: translateY(30px);
+  }
+
+  @include vp-767 {
+    transform: translateY(8px);
+  }
+
   &.is-open .page-header__logo svg {
     color: $text-dark;
   }
@@ -80,13 +88,8 @@
 
   @include vp-767 {
     flex-wrap: wrap;
-  }
-}
-
-.page-header__logo {
-  @include vp-767 {
-    margin-left: auto;
-    margin-bottom: 6px;
+    align-items: start;
+    padding-top: 7px;
   }
 }
 

@@ -1,8 +1,19 @@
 .hero {
   margin-top: -62px;
+
+  @include vp-1199 {
+    margin-top: -44px;
+  }
+
+  @include vp-767 {
+    margin-top: -63px;
+  }
 }
 
-.hero__container {}
+.hero__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .hero__slider {}
 
