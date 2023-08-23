@@ -13,18 +13,25 @@
   background-color: $color-main;
 
   @include hover-focus {
+    outline: none;
     color: $text-active;
     border: 1px solid $color-active;
     background-color: $color-default-white;
 
     @include active {
-      background-color: $color-default-white;
+      background-color: $color-active;
       border: 1px solid $color-active;
       color: $text-light;
     }
   }
 
   &:disabled {
+    color: $text-light;
+    pointer-events: none;
+    background: rgba(2, 102, 193, 0.10);
+  }
+
+  &--disabled {
     color: $text-light;
     pointer-events: none;
     background: rgba(2, 102, 193, 0.10);
