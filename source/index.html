@@ -23,138 +23,109 @@
 
   <body>
     <div class="wrapper">
-      <header class="page-header" data-header>
-        <div class="container">
-          <div class="page-header__wrapper">
-            <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню"
-              aria-pressed="false" data-burger>
-              <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
-                aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-menu"></use>
-              </svg>
-              <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
-                aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-            <div class="page-header__logo logo logo--header">
-              <h1 class="visually-hidden">Организация походов в горы</h1>
-              <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
-                <!-- <img src="img/svg/logo.svg" alt="Логотип Lifetour."> -->
-                <svg width="205" height="62">
-                  <use href="img/sprite.svg#icon-logo"></use>
+      <header class="page-header">
+        <div class="page-header__container" data-header>
+          <div class="container">
+            <div class="page-header__wrapper">
+              <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню"
+                aria-pressed="false" data-burger>
+                <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
+                  aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-menu"></use>
                 </svg>
-              </a>
-            </div>
-            <nav class="page-header__nav nav nav--header">
-              <ul class="page-header__list nav__list nav__list--header">
-                <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="trips.html">Туры</a>
-                </li>
-                <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="education.html">Обучение</a>
-                </li>
-                <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="about.html">О нас</a>
-                </li>
-                <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="reviews.html">Отзывы</a>
-                </li>
-                <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="gallery.html">Фотографии</a>
-                </li>
-                <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="contacts.html">Контакты</a>
-                </li>
-                <!-- <li class="page-header__item"><a class="page-header__link page-header__link--blue"
+                <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
+                  aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="page-header__logo logo logo--header">
+                <h1 class="visually-hidden">Организация походов в горы</h1>
+                <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+                  <!-- <img src="img/svg/logo.svg" alt="Логотип Lifetour."> -->
+                  <svg width="205" height="62">
+                    <use href="img/sprite.svg#icon-logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <nav class="page-header__nav nav nav--header">
+                <ul class="page-header__list nav__list nav__list--header">
+                  <li class="page-header__item nav__item">
+                    <a class="page-header__link nav__link" href="trips.html">Туры</a>
+                  </li>
+                  <li class="page-header__item nav__item">
+                    <a class="page-header__link nav__link" href="education.html">Обучение</a>
+                  </li>
+                  <li class="page-header__item nav__item">
+                    <a class="page-header__link nav__link" href="about.html">О нас</a>
+                  </li>
+                  <li class="page-header__item nav__item">
+                    <a class="page-header__link nav__link" href="reviews.html">Отзывы</a>
+                  </li>
+                  <li class="page-header__item nav__item">
+                    <a class="page-header__link nav__link" href="gallery.html">Фотографии</a>
+                  </li>
+                  <li class="page-header__item nav__item">
+                    <a class="page-header__link nav__link" href="contacts.html">Контакты</a>
+                  </li>
+                  <!-- <li class="page-header__item"><a class="page-header__link page-header__link--blue"
                               href="https://ligaa.agency/" target="_blank">8 800 725 32 32</a></li> -->
-              </ul>
-            </nav>
-            <a class="page-header__link page-header__link--phone" href="tel:88007253232">8 800 725 32 32</a>
+                </ul>
+              </nav>
+              <a class="page-header__link page-header__link--phone" href="tel:88007253232">8 800 725 32 32</a>
+            </div>
           </div>
         </div>
-      </header>
-      <main>
         <section class="hero">
           <div class="hero__container">
-            <!-- <button class="hero__arrow hero__arrow--prev swiper-arrow swiper-button-prev" type="button"
-              aria-label="Предыдущий слайд.">
-              <svg width="16" height="32">
-                <use href="img/sprite.svg#icon-prev-arrow"></use>
-              </svg>
-            </button> -->
             <div class="hero__slider swiper">
               <div class="hero__wrapper swiper-wrapper">
                 <div class="hero__slide swiper-slide hero-slide">
-                  <div class="container">
-                    <div class="hero-slide__col">
-                      <h2 class="hero-slide__title">Захватывающие вершины Кавказа</h2>
-                      <p class="hero-slide__descr">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие
-                        ландшафты и&nbsp;совершите восход на&nbsp;вершину
-                        горы Чегет.</p>
-                      <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
-                      <div class="hero-slide__info">
-                        <span class="hero-slide__text hero-slide__text--time">6&nbsp;дней/5 ночей</span>
-                        <span class="hero-slide__text hero-slide__text--complexity">Высокая сложность</span>
-                      </div>
-                    </div>
-                    <div class="hero-slide__col">
-                      <div class="hero-slide__video-container">
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="hero__slide swiper-slide hero-slide">
-                  <div class="container">
-                    <div class="hero-slide__col">
-                      <h2 class="hero-slide__title">Невероятная природа Камчатки</h2>
-                      <p class="hero-slide__descr">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь
-                        в&nbsp;путешествие по&nbsp;одному из&nbsp;самых
-                        нетронутых уголков дикой природы в&nbsp;мире.</p>
-                      <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
-                      <div class="hero-slide__info">
-                        <span class="hero-slide__text hero-slide__text--time">9&nbsp;дней/10 ночей</span>
-                        <span class="hero-slide__text hero-slide__text--complexity">Средняя сложность</span>
-                      </div>
-                    </div>
-                    <div class="hero-slide__col">
-                      <div class="hero-slide__img-container">
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="hero__slide swiper-slide hero-slide">
-                  <div class="container">
-                    <div class="hero-slide__col">
-                      <h2 class="hero-slide__title">Магические пейзажи Алтайского Края</h2>
-                      <p class="hero-slide__descr">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение
-                        с&nbsp;посещением магических и&nbsp;захватывающих дух
-                        ландшафтов Алтайских гор.</p>
-                      <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
-                      <div class="hero-slide__info">
-                        <span class="hero-slide__text hero-slide__text--time">8&nbsp;дней/7 ночей</span>
-                        <span class="hero-slide__text hero-slide__text--complexity">Легкая сложность</span>
-                      </div>
-                    </div>
-                    <div class="hero-slide__col">
-                      <div class="hero-slide__audio-container">
-
+                  <div class="hero-slide__container">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1199px)"
+                        srcset="img/hero/hero-1-desktop.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 767px)"
+                        srcset="img/hero/hero-1-tablet.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/hero/hero-1-mobile.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
+                      <source media="(min-width: 1199px)"
+                        srcset="img/hero/hero-1-desktop.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 767px)"
+                        srcset="img/hero/hero-1-tablet.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
+                      <source media="(max-width: 767px)"
+                        srcset="img/hero/hero-1-mobile.jpg 1x, img/hero/hero-1-mobile@2x.jpg 2x">
+                      <img src="img/hero/hero-1-desktop.jpg" srcset="img/hero/hero-1-desktop@2x.jpg 2x"
+                        alt="Захватывающие вершины Кавказа.">
+                    </picture>
+                    <div class="hero-slide__row">
+                      <div class="container">
+                        <div class="hero-slide__col hero-slide__col--left">
+                          <h2 class="hero-slide__title">Захватывающие вершины Кавказа</h2>
+                          <p class="hero-slide__descr">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через
+                            потрясающие
+                            ландшафты и&nbsp;совершите восход на&nbsp;вершину
+                            горы Чегет.</p>
+                          <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
+                          <div class="hero-slide__info">
+                            <span class="hero-slide__text hero-slide__text--time">6&nbsp;дней/5 ночей</span>
+                            <span class="hero-slide__text hero-slide__text--complexity">Высокая сложность</span>
+                          </div>
+                        </div>
+                        <div class="hero-slide__col hero-slide__col--right">
+                          <div class="hero-slide__video-container">
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <button class="hero__arrow hero__arrow--next swiper-arrow swiper-button-next" type="button"
-              aria-label="Следующий слайд.">
-              <svg width="16" height="32">
-                <use href="img/sprite.svg#icon-next-arrow"></use>
-              </svg>
-            </button> -->
           </div>
         </section>
+      </header>
+      <main>
+
       </main>
       <footer class="page-footer">
         <div class="container">

@@ -1,16 +1,119 @@
 .hero-slide {}
 
-.hero-slide__col {}
+.hero-slide__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
 
-.hero-slide__title {}
+  & img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
 
-.hero-slide__descr {}
+.hero-slide__row {
+  position: relative;
+  z-index: 2;
+}
 
-.hero-slide__btn {}
+.hero-slide__col {
+  &--left {
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    padding-top: 142px;
+    padding-bottom: 80px;
 
-.hero-slide__info {}
+    @include vp-1199 {
+      padding-top: 30px;
+      padding-bottom: 90px;
+    }
+
+    @include vp-767 {
+      padding-top: 15px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--fight {}
+}
+
+.hero-slide__title {
+  max-width: 770px;
+  margin: 0;
+  margin-bottom: 16px;
+  color: $text-light;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+
+  @include vp-1199 {
+    margin-bottom: 9px;
+    text-align: center;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.hero-slide__descr {
+  max-width: 425px;
+  margin: 0;
+  margin-bottom: 35px;
+  color: $text-light;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include vp-1199 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.hero-slide__btn {
+  max-width: 220px;
+  min-height: 58px;
+}
+
+.hero-slide__info {
+  display: inline-flex;
+  margin-top: auto;
+  column-gap: 10px;
+}
 
 .hero-slide__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  color: $text-light;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border: 1px solid $color-default-light;
+
+  @include vp-1199 {
+    display: none;
+  }
 
   &--time {}
 
