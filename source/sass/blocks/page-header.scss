@@ -3,7 +3,11 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
   padding-top: 40px;
 
+
+  /***/
   background-color: blue;
+  /***/
+
 
   @include vp-1199 {
     padding-top: 30px;
@@ -11,10 +15,6 @@
 
   @include vp-767 {
     padding-top: 15px;
-  }
-
-  &.is-hidden {
-    transform: translateY(-100%);
   }
 
   &.is-open .page-header__logo svg {
@@ -26,50 +26,11 @@
   }
 }
 
-.page-header__nav {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include vp-1199 {
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    margin: 0;
-    position: fixed;
-    pointer-events: none;
-    top: 0;
-    transition: background-color 0.3s ease;
-    right: 0;
-    visibility: hidden;
-    z-index: 20;
-  }
-
-  .is-open & {
-    top: 94px;
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-
-    .page-header__item {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-.page-header__item {
-  @include vp-1199 {
-    opacity: 0;
-    transition: opacity ease-out 0.15s, transform ease-out 0.15s;
-    transform: translateX(-15px);
-  }
-}
-
 .page-header__burger {
   align-items: center;
   background-color: transparent;
   border: none;
-  color: #000000;
+  color: $color-dark;
   display: none;
   padding: 0;
   position: relative;
