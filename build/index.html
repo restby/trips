@@ -78,22 +78,24 @@
             <div class="hero__slider swiper">
               <div class="hero__wrapper swiper-wrapper">
                 <div class="hero__slide swiper-slide hero-slide">
-                  <picture>
-                    <source width="1440" height="800" type="image/webp" media="(min-width: 1199px)"
-                      srcset="img/hero/hero-1-desktop.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
-                    <source width="768" height="1024" type="image/webp" media="(min-width: 767px)"
-                      srcset="img/hero/hero-1-tablet.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
-                    <source width="320" height="568" type="image/webp" media="(max-width: 767px)"
-                      srcset="img/hero/hero-1-mobile.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
-                    <source width="1440" height="800" media="(min-width: 1199px)"
-                      srcset="img/hero/hero-1-desktop.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x">
-                    <source width="768" height="1024" media="(min-width: 767px)"
-                      srcset="img/hero/hero-1-tablet.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
-                    <source width="320" height="568" media="(max-width: 767px)"
-                      srcset="img/hero/hero-1-mobile.jpg 1x, img/hero/hero-1-mobile@2x.jpg 2x">
-                    <img width="1440" height="800" src="img/hero/hero-1-desktop.jpg"
-                      srcset="img/hero/hero-1-desktop@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
-                  </picture>
+                  <div class="hero-slide__img-container">
+                    <picture>
+                      <source width="1440" height="800" type="image/webp" media="(min-width: 1199px)"
+                        srcset="img/hero/hero-1-desktop.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
+                      <source width="768" height="1024" type="image/webp" media="(min-width: 767px)"
+                        srcset="img/hero/hero-1-tablet.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
+                      <source width="320" height="568" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/hero/hero-1-mobile.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
+                      <source width="1440" height="800" media="(min-width: 1199px)"
+                        srcset="img/hero/hero-1-desktop.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x">
+                      <source width="768" height="1024" media="(min-width: 767px)"
+                        srcset="img/hero/hero-1-tablet.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
+                      <source width="320" height="568" media="(max-width: 767px)"
+                        srcset="img/hero/hero-1-mobile.jpg 1x, img/hero/hero-1-mobile@2x.jpg 2x">
+                      <img width="1440" height="800" src="img/hero/hero-1-desktop.jpg"
+                        srcset="img/hero/hero-1-desktop@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
+                    </picture>
+                  </div>
                   <div class="container">
                     <div class="hero-slide__row">
                       <div class="hero-slide__col hero-slide__col--left">
@@ -109,138 +111,78 @@
                         </div>
                       </div>
                       <div class="hero-slide__col hero-slide__col--right">
-                        <!-- <div class="hero-slide__video-container">
+                        <div class="hero-slide__video-wrapper">
                           <div class="video" data-id="video"
                             data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                             <picture>
-                              <source type="image/webp" media="(min-width: 1199px)"
+                              <source type="image/webp" media="(min-width: 1199px)" width="482" height="317"
                                 srcset="img/video/video-preview-desktop.webp 1x, img/video/video-preview-desktop@2x.webp 2x">
-                              <source type="image/webp" media="(min-width: 767px)"
+                              <source type="image/webp" media="(min-width: 767px)" width="442" height="300"
                                 srcset="img/video/video-preview-tablet.webp 1x, img/video/video-preview-tablet@2x.webp 2x">
-                              <source media="(min-width: 1199px)"
+                              <source media="(min-width: 1199px)" width="482" height="317"
                                 srcset="img/video/video-preview-desktop.jpg 1x, img/video/video-preview-desktop@2x.jpg 2x">
-                              <source media="(min-width: 767px)"
+                              <source media="(min-width: 767px)" width="442" height="300"
                                 srcset="img/video/video-preview-tablet.jpg 1x, img/video/video-preview-tablet@2x.jpg 2x">
-                              <img src="img/video/video-preview-desktop.jpg"
+                              <img width="482" height="317" src="img/video/video-preview-desktop.jpg"
                                 srcset="img/video/video-preview-desktop@2x.jpg 2x"
                                 alt="Бесплатные интерактивные онлайн-курсы">
                             </picture>
-                            <button class="video__btn" aria-label="Запусутить видео.">
-                            </button>
+                            <button class="video__btn" aria-label="Запусутить видео."></button>
                           </div>
-                        </div> -->
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="hero__slide swiper-slide hero-slide">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1199px)"
-                      srcset="img/hero/hero-1-desktop.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 767px)"
-                      srcset="img/hero/hero-1-tablet.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/hero/hero-1-mobile.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
-                    <source media="(min-width: 1199px)"
-                      srcset="img/hero/hero-1-desktop.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x">
-                    <source media="(min-width: 767px)"
-                      srcset="img/hero/hero-1-tablet.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/hero/hero-1-mobile.jpg 1x, img/hero/hero-1-mobile@2x.jpg 2x">
-                    <img src="img/hero/hero-1-desktop.jpg" srcset="img/hero/hero-1-desktop@2x.jpg 2x"
-                      alt="Захватывающие вершины Кавказа.">
-                  </picture>
-                  <div class="container">
-                    <div class="hero-slide__row">
-                      <div class="hero-slide__col hero-slide__col--left">
-                        <h2 class="hero-slide__title">Захватывающие вершины Кавказа</h2>
-                        <p class="hero-slide__descr">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через
-                          потрясающие
-                          ландшафты и&nbsp;совершите восход на&nbsp;вершину
-                          горы Чегет.</p>
-                        <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
-                        <div class="hero-slide__info">
-                          <span class="hero-slide__text hero-slide__text--time">6&nbsp;дней/5 ночей</span>
-                          <span class="hero-slide__text hero-slide__text--complexity">Высокая сложность</span>
-                        </div>
-                      </div>
-                      <div class="hero-slide__col hero-slide__col--right">
-                        <!-- <div class="hero-slide__video-container">
-                          <div class="video" data-id="video"
-                            data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
-                            <picture>
-                              <source type="image/webp" media="(min-width: 1199px)"
-                                srcset="img/video/video-preview-desktop.webp 1x, img/video/video-preview-desktop@2x.webp 2x">
-                              <source type="image/webp" media="(min-width: 767px)"
-                                srcset="img/video/video-preview-tablet.webp 1x, img/video/video-preview-tablet@2x.webp 2x">
-                              <source media="(min-width: 1199px)"
-                                srcset="img/video/video-preview-desktop.jpg 1x, img/video/video-preview-desktop@2x.jpg 2x">
-                              <source media="(min-width: 767px)"
-                                srcset="img/video/video-preview-tablet.jpg 1x, img/video/video-preview-tablet@2x.jpg 2x">
-                              <img src="img/video/video-preview-desktop.jpg"
-                                srcset="img/video/video-preview-desktop@2x.jpg 2x"
-                                alt="Бесплатные интерактивные онлайн-курсы">
-                            </picture>
-                            <button class="video__btn" aria-label="Запусутить видео">
-                            </button>
-                          </div>
-                        </div> -->
-                      </div>
-                    </div>
+                  <div class="hero-slide__img-container">
+                    <picture>
+                      <source width="1440" height="800" type="image/webp" media="(min-width: 1199px)"
+                        srcset="img/hero/hero-2-desktop.webp 1x, img/hero/hero-2-desktop@2x.webp 2x">
+                      <source width="768" height="1024" type="image/webp" media="(min-width: 767px)"
+                        srcset="img/hero/hero-2-tablet.webp 1x, img/hero/hero-2-tablet@2x.webp 2x">
+                      <source width="320" height="568" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/hero/hero-2-mobile.webp 1x, img/hero/hero-2-mobile@2x.webp 2x">
+                      <source width="1440" height="800" media="(min-width: 1199px)"
+                        srcset="img/hero/hero-1-desktop.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x">
+                      <source width="768" height="1024" media="(min-width: 767px)"
+                        srcset="img/hero/hero-2-tablet.jpg 1x, img/hero/hero-2-tablet@2x.jpg 2x">
+                      <source width="320" height="568" media="(max-width: 767px)"
+                        srcset="img/hero/hero-2-mobile.jpg 1x, img/hero/hero-2-mobile@2x.jpg 2x">
+                      <img width="1440" height="800" src="img/hero/hero-2-desktop.jpg"
+                        srcset="img/hero/hero-2-desktop@2x.jpg 2x" alt="Невероятная природа Камчатки.">
+                    </picture>
                   </div>
-                </div>
-                <div class="hero__slide swiper-slide hero-slide">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1199px)"
-                      srcset="img/hero/hero-1-desktop.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 767px)"
-                      srcset="img/hero/hero-1-tablet.webp 1x, img/hero/hero-1-tablet@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/hero/hero-1-mobile.webp 1x, img/hero/hero-1-mobile@2x.webp 2x">
-                    <source media="(min-width: 1199px)"
-                      srcset="img/hero/hero-1-desktop.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x">
-                    <source media="(min-width: 767px)"
-                      srcset="img/hero/hero-1-tablet.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/hero/hero-1-mobile.jpg 1x, img/hero/hero-1-mobile@2x.jpg 2x">
-                    <img src="img/hero/hero-1-desktop.jpg" srcset="img/hero/hero-1-desktop@2x.jpg 2x"
-                      alt="Захватывающие вершины Кавказа.">
-                  </picture>
                   <div class="container">
                     <div class="hero-slide__row">
                       <div class="hero-slide__col hero-slide__col--left">
-                        <h2 class="hero-slide__title">Захватывающие вершины Кавказа</h2>
-                        <p class="hero-slide__descr">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через
-                          потрясающие
-                          ландшафты и&nbsp;совершите восход на&nbsp;вершину
-                          горы Чегет.</p>
+                        <h2 class="hero-slide__title">Невероятная природа Камчатки</h2>
+                        <p class="hero-slide__descr">Незабываемое приключение, во&nbsp;время которого
+                          вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых
+                          нетронутых уголков дикой природы в&nbsp;мире.</p>
                         <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
                         <div class="hero-slide__info">
-                          <span class="hero-slide__text hero-slide__text--time">6&nbsp;дней/5 ночей</span>
-                          <span class="hero-slide__text hero-slide__text--complexity">Высокая сложность</span>
+                          <span class="hero-slide__text hero-slide__text--time">9&nbsp;дней/10 ночей</span>
+                          <span class="hero-slide__text hero-slide__text--complexity">Средняя сложность</span>
                         </div>
                       </div>
                       <div class="hero-slide__col hero-slide__col--right">
-                        <!-- <div class="hero-slide__video-container">
-                          <div class="video" data-id="video"
-                            data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
-                            <picture>
-                              <source type="image/webp" media="(min-width: 1199px)"
-                                srcset="img/video/video-preview-desktop.webp 1x, img/video/video-preview-desktop@2x.webp 2x">
-                              <source type="image/webp" media="(min-width: 767px)"
-                                srcset="img/video/video-preview-tablet.webp 1x, img/video/video-preview-tablet@2x.webp 2x">
-                              <source media="(min-width: 1199px)"
-                                srcset="img/video/video-preview-desktop.jpg 1x, img/video/video-preview-desktop@2x.jpg 2x">
-                              <source media="(min-width: 767px)"
-                                srcset="img/video/video-preview-tablet.jpg 1x, img/video/video-preview-tablet@2x.jpg 2x">
-                              <img src="img/video/video-preview-desktop.jpg"
-                                srcset="img/video/video-preview-desktop@2x.jpg 2x"
-                                alt="Бесплатные интерактивные онлайн-курсы">
-                            </picture>
-                            <button class="video__btn" aria-label="Запусутить видео">
-                            </button>
-                          </div>
-                        </div> -->
+                        <div class="hero-slide__img-wrapper">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1199px)" width="410" height="459"
+                              srcset="img/photo-cards/photo-card-desktop.webp 1x, img/photo-cards/photo-card-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 767px)" width="442" height="365"
+                              srcset="img/photo-cards/photo-card-tablet.webp 1x, img/photo-cards/photo-card-tablet@2x.webp 2x">
+                            <source media="(min-width: 1199px)" width="410" height="459"
+                              srcset="img/photo-cards/photo-card-desktop.jpg 1x, img/photo-cards/photo-card-desktop@2x.jpg 2x">
+                            <source media="(min-width: 767px)" width="442" height="365"
+                              srcset="img/photo-cards/photo-card-tablet.png 1x, img/photo-cards/photo-card-tablet@2x.png 2x">
+                            <img width="410" height="459" src="img/photo-cards/photo-card-desktop.png"
+                              srcset="img/photo-cards/photo-card-desktop@2x.png 2x"
+                              alt="Бесплатные интерактивные онлайн-курсы">
+                          </picture>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -4,11 +4,10 @@ const initHeroSlider = () => {
   if (heroSlider) {
     const swiper = new Swiper(heroSlider, {
       simulateTouch: false,
-      grabCursor: false,
       watchOverflow: true,
       speed: 500,
       loop: true,
-      // autoHeight: true,
+      autoHeight: true,
     });
   }
 }
