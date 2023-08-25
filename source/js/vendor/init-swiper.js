@@ -8,6 +8,10 @@ const initHeroSlider = () => {
       speed: 500,
       loop: true,
       autoHeight: true,
+      pagination: {
+        el: ".hero__slider-pagination",
+        clickable: true,
+      },
     });
   }
 }
