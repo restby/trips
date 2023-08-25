@@ -301,7 +301,69 @@
         </section>
       </header>
       <main>
+        <section class="tours">
+          <div class="container">
+            <div class="tours__container">
+              <h2 class="tours__title section-title">Ближайшие туры</h2>
+              <div class="tours__slider swiper">
+                <div class="tours__btns">
+                  <button class="tours__arrow tours__arrow--prev swiper-arrow swiper-button-prev" type="button"
+                    aria-label="Предыдущий слайд.">
+                    <!-- <svg width="16" height="32">
+                      <use href="img/sprite.svg#icon-next-arrow"></use>
+                    </svg> -->
+                  </button>
+                  <button class="tours__arrow tours__arrow--next swiper-arrow swiper-button-next" type="button"
+                    aria-label="Следующий слайд.">
+                    <!-- <svg width="16" height="32">
+                      <use href="img/sprite.svg#icon-next-arrow"></use>
+                    </svg> -->
+                  </button>
+                </div>
+                <div class="tours__wrapper swiper-wrapper"></div>
+                <div class="tours__slide swiper-slide tours-slide">
+                  <div class="tours-slide__img-container">
+                    <picture>
+                      <source width="1440" height="800" type="image/webp" media="(min-width: 1199px)"
+                        srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
+                      <source width="768" height="1024" type="image/webp" media="(min-width: 767px)"
+                        srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
+                      <source width="320" height="568" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
+                      <source width="1440" height="800" media="(min-width: 1199px)"
+                        srcset="img/tours/tour-1-desktop.jpg 1x, img/tours/tour-1-desktop@2x.jpg 2x">
+                      <source width="768" height="1024" media="(min-width: 767px)"
+                        srcset="img/tours/tour-1-tablet.jpg 1x, img/tours/tour-1-tablet@2x.jpg 2x">
+                      <source width="320" height="568" media="(max-width: 767px)"
+                        srcset="img/tours/tour-1-mobile.jpg 1x, img/tours/tour-1-mobile@2x.jpg 2x">
+                      <img width="1440" height="800" src="img/tours/tour-1-desktop.jpg"
+                        srcset="img/tours/hero-1-desktop@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
+                    </picture>
+                  </div>
+                  <div class="tours-slide__content">
+                    <div class="tours-slide__row">
+                      <span class="tours-slide__descr tours-slide__descr--locztion">Кавказ</span>
+                      <span class="tours-slide__descr tours-slide__descr--days">4 дня</span>
+                      <span class="tours-slide__descr tours-slide__descr--nights">3 ночи</span>
+                    </div>
+                    <h3 class="tours-slide__title">Путешествие
+                      вокруг Эльбруса</h3>
+                    <div class="tours-slide__row">
+                      <span class="tours-slide__info tours-slide__info--level">Сложность:</span>
+                      <span class="tours-slide__info tours-slide__info--date">Даты набора:</span>
+                      <span class="tours-slide__info tours-slide__info--group">Группа:</span>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="tours__slide swiper-slide tours-slide"></div>
+
+                <div class="tours__slide swiper-slide tours-slide"></div>
+              </div>
+              <a class="tours__link" href="#">Показать все туры</a>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="page-footer">
         <div class="container">
