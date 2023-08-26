@@ -1426,6 +1426,7 @@ button,
 
 .wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .section-title {
@@ -2405,6 +2406,7 @@ button,
 .tours {
   padding-top: 123px;
   padding-bottom: 52px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .tours {
@@ -2414,6 +2416,102 @@ button,
 @media (max-width: 767px) {
   .tours {
     padding-top: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .tours::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 418px;
+    height: 279px;
+    bottom: -37px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 418px auto;
+    background-image: url("../../img/decor/decor-3-desktop.png");
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .tours::before {
+    background-image: url("../../img/decor/decor-3-desktop@2x.png");
+  }
+}
+@media (min-width: 1200px) {
+  .webp .tours::before {
+    background-image: url("../../img/decor/decor-3-desktop.webp");
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .webp .tours::before {
+    background-image: url("../../img/decor/decor-3-desktop@2x.webp");
+  }
+}
+.tours::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 602px;
+  height: 1364px;
+  bottom: -602px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 602px auto;
+  background-image: url("../../img/decor/decor-1-desktop.png");
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .tours::after {
+    background-image: url("../../img/decor/decor-1-desktop@2x.png");
+  }
+}
+@media (max-width: 1199px) {
+  .tours::after {
+    background-image: url("../../img/decor/decor-1-tablet.png");
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .tours::after {
+    background-image: url("../../img/decor/decor-1-tablet@2x.png");
+  }
+}
+@media (max-width: 767px) {
+  .tours::after {
+    background-image: url("../../img/decor/decor-1-mobile.png");
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .tours::after {
+    background-image: url("../../img/decor/decor-1-mobile@2x.png");
+  }
+}
+.webp .tours::after {
+  background-image: url("../../img/decor/decor-1-desktop.webp");
+}
+@media (max-width: 1199px) {
+  .webp .tours::after {
+    background-image: url("../../img/decor/decor-1-tablet.webp");
+  }
+}
+@media (max-width: 767px) {
+  .webp .tours::after {
+    background-image: url("../../img/decor/decor-1-mobile.webp");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .webp .tours::after {
+    background-image: url("../../img/decor/decor-1-desktop@2x.webp");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px) {
+  .webp .tours::after {
+    background-image: url("../../img/decor/decor-1-tablet@2x.webp");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .webp .tours::after {
+    background-image: url("../../img/decor/decor-1-mobile@2x.webp");
   }
 }
 
