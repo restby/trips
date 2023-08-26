@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/header/burger';
 import {play} from './modules/video-player';
-import {initHeroSlider} from './vendor/init-swiper';
+import {initHeroSlider, initToursSlider} from './vendor/init-swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
     play();
     initHeroSlider();
+    initToursSlider();
   });
 });
 

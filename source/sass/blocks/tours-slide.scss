@@ -1,25 +1,266 @@
-.tours-slide {}
+.tours-slide {
+  background-color: #adc7dc;
+  margin: 0 auto;
+  position: relative;
+  min-height: 412px;
 
-.tours-slide__img-container {}
-
-.tours-slide__content {}
-
-.tours-slide__row {}
-
-.tours-slide__descr {
-  &--locztion {}
-
-  &--days {}
-
-  &--nights {}
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $black-to-right;
+    z-index: 2;
+  }
 }
 
-.tours-slide__title {}
+.tours-slide__img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.tours-slide__content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+}
+
+.tours-slide__row {
+  display: flex;
+  justify-content: space-between;
+
+  &--descr {
+    margin-top: 185px;
+    margin-bottom: 24px;
+
+    @include vp-1199 {
+      margin-top: 186px;
+    }
+
+    @include vp-767 {
+      margin-top: 172px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      column-gap: 16px;
+      position: relative;
+
+      &::before {
+        position: relative;
+        content: "";
+        width: 100%;
+        height: 12px;
+        background-color: transparent;
+        order: 3;
+      }
+    }
+  }
+
+  &--info {}
+}
+
+.tours-slide__descr {
+  display: flex;
+  align-items: center;
+  min-height: 29px;
+  color: $text-light;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  position: relative;
+  width: 100%;
+  padding-left: 28px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+
+  &--locztion {
+    padding-left: 39px;
+    background-color: $color-main;
+    text-align: left;
+    max-width: 108px;
+
+    @include vp-1199 {
+      padding-left: 30px;
+
+      .tours-slide--elbrus & {
+        max-width: 97px;
+      }
+
+      .tours-slide--beluha & {
+        max-width: 92px;
+      }
+
+      .tours-slide--fisht & {
+        max-width: 96px;
+      }
+    }
+
+    @include vp-767 {
+      order: 4;
+    }
+
+    &::before {
+      left: 24px;
+      width: 9px;
+      height: 12px;
+      background-image: url("../../img/svg/pin-filled.svg");
+
+      @include vp-1199 {
+        left: 16px;
+      }
+    }
+  }
+
+  &--days {
+    justify-content: center;
+    max-width: 76px;
+
+    @include vp-767 {
+      order: 1;
+    }
+
+    &::before {
+      background-image: url("../../img/svg/sun.svg");
+    }
+  }
+
+  &--nights {
+    justify-content: center;
+    max-width: 82px;
+
+    @include vp-767 {
+      order: 2;
+    }
+
+    &::before {
+      background-image: url("../../img/svg/moon.svg");
+    }
+  }
+}
+
+.tours-slide__title {
+  margin: 0;
+  margin-bottom: 38px;
+  max-width: 233px;
+  color: $text-light;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  position: relative;
+
+  @include vp-767 {
+    max-width: 194px;
+    margin-bottom: 31px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    bottom: -17px;
+    left: 0;
+    background-color: rgba($color-default-white, 0.2);
+  }
+}
 
 .tours-slide__info {
-  &--level {}
+  display: flex;
+  flex-direction: column;
+  color: $text-light;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
 
-  &--date {}
+  & span {
+    margin-top: 5px;
+    color: $text-light;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
 
-  &--group {}
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  // &--level {}
+
+  // &--date {}
+
+  &--group {
+    margin-right: 5px;
+  }
+}
+
+.tours-slide__stars {
+  display: flex;
+  column-gap: 1px;
+  margin-top: 6px;
+
+  @include vp-767 {
+    column-gap: 3px;
+    margin-top: 4px;
+  }
+}
+
+.tours-slide__star {
+  width: 15px;
+  height: 14px;
+
+  @include vp-767 {
+    width: 12px;
+    height: 12px;
+  }
+
+  background-image: url("../../img/svg/star.svg");
+
+  .tours-slide--elbrus & {
+    &:nth-child(-n + 3) {
+      background-image: url("../../img/svg/star-filled.svg");
+    }
+  }
+
+  .tours-slide--beluha & {
+    &:nth-child(-n + 2) {
+      background-image: url("../../img/svg/star-filled.svg");
+    }
+  }
+
+  .tours-slide--fisht & {
+    &:nth-child(-n + 3) {
+      background-image: url("../../img/svg/star-filled.svg");
+    }
+  }
 }
