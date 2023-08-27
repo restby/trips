@@ -1,11 +1,45 @@
-.education-slide {}
+.education-slide {
+  border: 1px solid $color-default-white;
+  background: $color-default-white;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.10);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 36px;
+}
 
-.education-slide__img-container {}
+.education-slide__img-container {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
 
-.education-slide__content {}
+.education-slide__content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 14px;
+}
 
-.education__info {}
+.education-slide__title {
+  margin: 0;
+  max-width: 87px;
+  color: $text-dark;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
 
-.education__info-title {}
+.education-slide__link {
+  margin-left: auto;
+}
 
-.education__list {}
+.education-slide__descr {
+  margin: 0;
+  color: $text-dark;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @include vp-1199 {
+    line-height: 18px;
+  }
+}

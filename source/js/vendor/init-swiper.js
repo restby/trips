@@ -24,7 +24,6 @@ const initToursSlider = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 500,
-      loop: true,
       autoHeight: true,
       navigation: {
         nextEl: '.tours__arrow--next',
@@ -56,7 +55,6 @@ const initEducationSlider = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 500,
-      loop: true,
       autoHeight: true,
       navigation: {
         nextEl: '.education__arrow--next',
@@ -69,13 +67,13 @@ const initEducationSlider = () => {
         },
 
         767: {
-          slidesPerView: 4,
-          // spaceBetween: 18,
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
 
         1199: {
           slidesPerView: 4,
-          // spaceBetween: 30,
+          spaceBetween: 30,
         }
       },
     });

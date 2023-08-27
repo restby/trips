@@ -1,12 +1,87 @@
 .education {
   padding-top: 50px;
+
+  @include vp-1200 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      bottom: 6px;
+      background-color: rgba($color-main, 0.2);
+    }
+  }
+
 }
 
 .education__container {}
 
-.education__title {}
+.education__title {
+  margin-bottom: 38px;
 
-.education__descr {}
+  @include vp-1199 {
+    margin-bottom: 26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
+}
+
+.education__descr {
+  margin: 0;
+  margin-bottom: 52px;
+  color: $text-dark;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.education__list-title,
+.education__info-title {
+  margin: 0;
+  color: $text-dark;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.education__list-title {
+  margin-bottom: 44px;
+
+  @include vp-1199 {
+    margin-bottom: 34px;
+  }
+}
+
+.education__info-title {
+  margin-bottom: 45px;
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
 
 .education__slider-container {}
 
@@ -24,3 +99,102 @@
 .education__wrapper {}
 
 .education__slide {}
+
+.education__info {}
+
+.education__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  & li {
+    padding-bottom: 38px;
+    width: 100%;
+    max-width: 25%;
+    color: $text-dark;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    // position: relative;
+
+    @include vp-1199 {
+      max-width: 50%;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      max-width: 100%;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   width: 14px;
+    //   height: 14px;
+    //   bottom: 0;
+    //   left: 0;
+    //   border-radius: 50%;
+    //   background-color: $color-main;
+    // }
+  }
+
+  & p {
+    margin: 0;
+    padding-left: 40px;
+    // position: relative;
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   left: 0;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   background-repeat: no-repeat;
+    // }
+  }
+}
+
+// .education__item {
+//   &--1 p {
+//     &::before {
+//       width: 25px;
+//       height: 25px;
+//       background-image: url("../../img/svg/map.svg");
+
+//       @include vp-767 {
+//         width: 19px;
+//         height: 19px;
+//       }
+//     }
+//   }
+
+//   &--2 p {
+//     &::before {
+//       width: 24px;
+//       height: 24px;
+//       background-image: url("../../img/svg/boots.svg");
+//     }
+//   }
+
+//   &--3 p {
+//     &::before {
+//       width: 23px;
+//       height: 23px;
+//       background-image: url("../../img/svg/pine-tree.svg");
+//     }
+//   }
+
+//   &--4 p {
+//     &::before {
+//       width: 25px;
+//       height: 25px;
+//       background-image: url("../../img/svg/mountain.svg");
+//     }
+//   }
+// }
