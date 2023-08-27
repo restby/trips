@@ -1,5 +1,6 @@
 const heroSlider = document.querySelector('.hero__slider');
 const toursSlider = document.querySelector('.tours__slider');
+const educationSlider = document.querySelector('.education__slider');
 
 const initHeroSlider = () => {
   if (heroSlider) {
@@ -48,4 +49,36 @@ const initToursSlider = () => {
     });
   }
 }
-export { initHeroSlider, initToursSlider }
+const initEducationSlider = () => {
+  if (educationSlider) {
+    const swiper = new Swiper(educationSlider, {
+      simulateTouch: false,
+      grabCursor: false,
+      watchOverflow: true,
+      speed: 500,
+      loop: true,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.education__arrow--next',
+        prevEl: '.education__arrow--prev',
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+
+        767: {
+          slidesPerView: 4,
+          // spaceBetween: 18,
+        },
+
+        1199: {
+          slidesPerView: 4,
+          // spaceBetween: 30,
+        }
+      },
+    });
+  }
+}
+export { initHeroSlider, initToursSlider, initEducationSlider }

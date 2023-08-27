@@ -1,0 +1,49 @@
+.slider-btns {
+  position: absolute;
+  display: inline-flex;
+  column-gap: 4px;
+}
+
+.slider-btns__arrow {
+  width: 37px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  top: auto;
+  background-color: $color-main;
+  color: $color-default-white;
+  border: 1px solid $color-transparent;
+
+  @include hover-focus {
+    outline: none;
+    background-color: $color-default-white;
+    border: 1px solid $color-active;
+    color: $color-active;
+
+    @include active {
+      background-color: $color-active;
+      border: 1px solid $color-active;
+      color: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    background-color: rgba(2, 102, 193, 0.10);
+    border: 1px solid $color-transparent;
+  }
+
+  &--next {
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &::after {
+    display: none;
+  }
+}
