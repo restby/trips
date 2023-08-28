@@ -54,7 +54,7 @@
 }
 
 @mixin vp-1199-768 {
-  @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
+  @media (min-width: ($vp-768 - 1px)) and (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
