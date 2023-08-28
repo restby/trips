@@ -13,27 +13,22 @@
 
 }
 
-.education__container {
+.education__slider-container {
   width: 100%;
-  max-width: 1260px;
+  // max-width: 1260px;
   margin: 0 auto;
   padding: 0;
-
-  @include vp-1199 {
-    max-width: 738px;
-  }
-
-  @include vp-767 {
-    max-width: 100%;
-  }
-}
-
-.education__slider-container {
   margin-bottom: 18px;
   position: relative;
 
   @include vp-1199 {
+    max-width: calc(100% - 60px);
+    // max-width: 738px;
     margin-bottom: 13px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 
