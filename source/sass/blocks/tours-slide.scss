@@ -86,8 +86,10 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
+  text-align: right;
   position: relative;
   width: 100%;
+  max-width: 82px;
   padding-left: 28px;
 
   &::before {
@@ -109,17 +111,18 @@
     @include vp-1199 {
       padding-left: 30px;
 
-      .tours-slide--elbrus & {
-        max-width: 97px;
-      }
+      // .tours-slide--elbrus & {
+      //   max-width: 97px;
+      // }
 
-      .tours-slide--beluha & {
-        max-width: 92px;
-      }
+      // .tours-slide--beluha & {
+      //   max-width: 92px;
+      // }
 
-      .tours-slide--fisht & {
-        max-width: 96px;
-      }
+      // .tours-slide--fisht & {
+      //   max-width: 96px;
+      // }
+
     }
 
     @include vp-767 {
@@ -139,8 +142,8 @@
   }
 
   &--days {
-    justify-content: center;
-    max-width: 76px;
+    // justify-content: center;
+    // max-width: 76px;
 
     @include vp-767 {
       order: 1;
@@ -152,8 +155,8 @@
   }
 
   &--nights {
-    justify-content: center;
-    max-width: 82px;
+    // justify-content: center;
+    // max-width: 82px;
 
     @include vp-767 {
       order: 2;

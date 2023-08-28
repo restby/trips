@@ -232,6 +232,7 @@
     margin: 0;
     padding-left: 40px;
     position: relative;
+    max-width: 240px;
 
     &::before {
       position: absolute;
@@ -243,9 +244,7 @@
       background-size: cover;
     }
 
-    @include vp-1199 {
-      max-width: 240px;
-    }
+    @include vp-1199 {}
   }
 }
 
