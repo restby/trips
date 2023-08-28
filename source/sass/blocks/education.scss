@@ -1,5 +1,7 @@
 .education {
-  padding-top: 50px;
+  padding-top: 73px;
+  ///
+  margin-bottom: 100px;
 
   @include vp-1200 {
     position: relative;
@@ -14,12 +16,24 @@
     }
   }
 
+  @include vp-1199 {
+    // padding-top: 73px;
+  }
+
+  @include vp-767 {
+    //  padding: 0 15px;
+  }
+
 }
 
 .education__container {}
 
+.education__slider-container {
+  margin-bottom: 49px;
+}
+
 .education__title {
-  margin-bottom: 38px;
+  margin-bottom: 31px;
 
   @include vp-1199 {
     margin-bottom: 26px;
@@ -32,7 +46,8 @@
 
 .education__descr {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 57px;
+  max-width: 820px;
   color: $text-dark;
   font-size: 16px;
   font-weight: 400;
@@ -72,7 +87,7 @@
 }
 
 .education__info-title {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @include vp-1199 {
     margin-bottom: 44px;
@@ -83,7 +98,6 @@
   }
 }
 
-.education__slider-container {}
 
 .education__btns {}
 
@@ -109,20 +123,29 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include vp-1199 {
+    row-gap: 69px;
+  }
+
   & li {
-    padding-bottom: 38px;
+    padding-bottom: 41px;
     width: 100%;
     max-width: 25%;
     color: $text-dark;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    // position: relative;
+    position: relative;
+
+    // @include vp-1200 {
+
+    // }
 
     @include vp-1199 {
       max-width: 50%;
       font-size: 14px;
       line-height: 22px;
+      padding-bottom: 22px;
     }
 
     @include vp-767 {
@@ -131,70 +154,167 @@
       line-height: 18px;
     }
 
+    &::after {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: $color-main;
+    }
 
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-    //   width: 14px;
-    //   height: 14px;
-    //   bottom: 0;
-    //   left: 0;
-    //   border-radius: 50%;
-    //   background-color: $color-main;
-    // }
+    &:nth-child(n+3):nth-child(-n+4) {
+      @include vp-1199-768 {
+        padding-top: 28px;
+
+        &::after {
+          bottom: auto;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    &:first-child {
+      @include vp-1199-768 {
+        padding-top: 28px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: rgba(2, 102, 193, 0.10);
+          bottom: 6px;
+          left: 0;
+        }
+      }
+    }
+
+    &:nth-child(3n) {
+      @include vp-1199-768 {
+        padding-top: 28px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: rgba(2, 102, 193, 0.10);
+          top: 6px;
+          left: 0;
+        }
+      }
+    }
+
+    &:nth-child(2n) {
+      @include vp-1199-768 {
+        padding-top: 28px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 100%;
+          background-color: rgba(2, 102, 193, 0.10);
+          top: 100%;
+          bottom: -100%;
+          left: 6px;
+        }
+      }
+    }
+
   }
 
   & p {
     margin: 0;
     padding-left: 40px;
-    // position: relative;
+    position: relative;
 
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   left: 0;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    //   background-repeat: no-repeat;
-    // }
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @include vp-1199 {
+      max-width: 240px;
+    }
   }
 }
 
-// .education__item {
-//   &--1 p {
-//     &::before {
-//       width: 25px;
-//       height: 25px;
-//       background-image: url("../../img/svg/map.svg");
+.education__item {
+  // &--1 {
+  //   max-width: 308px;
+  // }
 
-//       @include vp-767 {
-//         width: 19px;
-//         height: 19px;
-//       }
-//     }
-//   }
+  // &--2 {
+  //   max-width: 307px;
+  // }
 
-//   &--2 p {
-//     &::before {
-//       width: 24px;
-//       height: 24px;
-//       background-image: url("../../img/svg/boots.svg");
-//     }
-//   }
+  // &--3 {
+  //   max-width: 308px;
+  // }
 
-//   &--3 p {
-//     &::before {
-//       width: 23px;
-//       height: 23px;
-//       background-image: url("../../img/svg/pine-tree.svg");
-//     }
-//   }
+  // &--4 {
+  //   max-width: 277px;
+  // }
 
-//   &--4 p {
-//     &::before {
-//       width: 25px;
-//       height: 25px;
-//       background-image: url("../../img/svg/mountain.svg");
-//     }
-//   }
-// }
+  &--1 p {
+    &::before {
+      width: 25px;
+      height: 25px;
+      background-image: url("../../img/svg/map.svg");
+
+      @include vp-767 {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+
+  &--2 p {
+    &::before {
+      width: 24px;
+      height: 24px;
+      background-image: url("../../img/svg/boots.svg");
+
+      @include vp-767 {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+
+  &--3 p {
+    &::before {
+      width: 23px;
+      height: 23px;
+      background-image: url("../../img/svg/pine-tree.svg");
+
+      @include vp-767 {
+        width: 19px;
+        height: 22px;
+      }
+    }
+  }
+
+  &--4 p {
+    &::before {
+      width: 25px;
+      height: 25px;
+      background-image: url("../../img/svg/mountain.svg");
+
+      @include vp-767 {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
