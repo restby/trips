@@ -14,36 +14,25 @@
 }
 
 .education__slider-container {
-  width: 100%;
-  // max-width: 1260px;
-  margin: 0 auto;
-  padding: 0;
-  margin-bottom: 18px;
   position: relative;
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  padding-left: 120px;
+  padding-right: 120px;
 
   @include vp-1199 {
-    max-width: calc(100% - 60px);
-    // max-width: 738px;
     margin-bottom: 13px;
   }
 
-  @include vp-767 {
-    max-width: 100%;
-  }
+  @include vp-767 {}
 }
 
 .education__wrapper {
-  min-height: 437px;
-  padding-left: 30px;
-  padding-right: 30px;
+  @include vp-1199 {}
 
-  @include vp-1199 {
-    min-height: 471px;
-  }
-
-  @include vp-767 {
-    min-height: 378px;
-  }
+  @include vp-767 {}
 }
 
 .education__title {
@@ -99,7 +88,7 @@
 }
 
 .education__list-title {
-  margin-bottom: 14px;
+  margin-bottom: 34px;
 
   @include vp-1199 {
     margin-bottom: 3px;
