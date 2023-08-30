@@ -2993,7 +2993,9 @@ button,
 }
 @media (max-width: 1199px) {
   .education__slider-container {
-    margin-bottom: 13px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 32px;
   }
 }
 .education__title {
@@ -3061,7 +3063,7 @@ button,
 }
 @media (max-width: 1199px) {
   .education__list-title {
-    margin-bottom: 3px;
+    margin-bottom: 23px;
   }
 }
 
@@ -3121,7 +3123,7 @@ button,
 .education__list li {
   width: 100%;
   max-width: 23.17%;
-  padding-bottom: 32px;
+  padding-bottom: 41px;
   position: relative;
   color: #2D383F;
   font-size: 16px;
@@ -3132,6 +3134,7 @@ button,
   .education__list li {
     max-width: 47.79%;
     padding-right: 84px;
+    padding-bottom: 26px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -3250,9 +3253,13 @@ button,
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   margin: 10px;
   padding: 20px;
-  -webkit-box-shadow: 0 0 30px 0 red;
-          box-shadow: 0 0 30px 0 red;
   min-height: 377px;
+}
+@media (max-width: 1199px) {
+  .education-slide__container {
+    padding: 15px;
+    min-height: 411px;
+  }
 }
 
 .education-slide__img-container {

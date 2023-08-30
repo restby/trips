@@ -68,7 +68,7 @@ const initEducationSlider = () => {
 
         767: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 10,
         },
 
         1199: {
