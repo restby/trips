@@ -1,10 +1,10 @@
 .slider-btns {
-  position: absolute;
   display: inline-flex;
   column-gap: 4px;
 }
 
 .slider-btns__arrow {
+  margin-top: 0;
   width: 37px;
   height: 35px;
   display: flex;

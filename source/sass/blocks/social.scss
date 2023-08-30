@@ -14,28 +14,8 @@
     margin-left: 5px;
   }
 
-  // & a {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 30px;
-  //   height: 30px;
-  //   border: 1px solid rgba($color-dark, 0.3);
-
-  //   @include hover-focus {
-  //     border: 1px solid $color-dark;
-  //     outline: none;
-
-  //     @include active {
-  //       color: $text-light;
-  //       background-color: $color-main;
-  //       border: 1px solid $color-main;
-  //     }
-  //   }
-
-  //   &--disabled {
-  //     border: 1px solid $color-dark;
-  //     opacity: 0.3;
-  //   }
-  // }
+  & a {
+    width: 30px;
+    height: 30px;
+  }
 }
