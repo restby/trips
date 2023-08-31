@@ -1,6 +1,7 @@
 const heroSlider = document.querySelector('.hero__slider');
 const toursSlider = document.querySelector('.tours__slider');
 const educationSlider = document.querySelector('.education__slider');
+const reviewsSlider = document.querySelector('.reviews__slider');
 
 const initHeroSlider = () => {
   if (heroSlider) {
@@ -79,4 +80,34 @@ const initEducationSlider = () => {
     });
   }
 }
-export { initHeroSlider, initToursSlider, initEducationSlider }
+const initReviewsSlider = () => {
+  if (reviewsSlider) {
+    const swiper = new Swiper(reviewsSlider, {
+      simulateTouch: false,
+      grabCursor: false,
+      watchOverflow: true,
+      speed: 500,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.reviews__arrow--next',
+        prevEl: '.reviews__arrow--prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+
+        767: {
+          slidesPerView: 1.26,
+          spaceBetween: 10,
+        },
+
+        1199: {
+          slidesPerView: 1.63,
+          spaceBetween: 10,
+        }
+      },
+    });
+  }
+}
+export { initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider }

@@ -1,0 +1,106 @@
+.review-slide {}
+
+.review-slide__container {
+  background: $color-default-white;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.10);
+  margin: 10px;
+  padding: 20px;
+  padding-right: 40px;
+  min-height: 293px;
+  display: flex;
+  column-gap: 30px;
+
+  @include vp-1199 {
+    min-height: 277px;
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    padding-right: 20px;
+  }
+}
+
+.review-slide__img-container {
+  flex-shrink: 0;
+
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
+
+  & img {
+    width: 258px;
+    height: 253px;
+
+    @include vp-1199 {
+      width: 186px;
+      height: 237px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+.review-slide__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include vp-1199 {
+    padding-top: 3px;
+    padding-bottom: 0;
+  }
+
+  & p {
+    margin: 0;
+    color: $text-dark;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include vp-767 {}
+  }
+
+  & span {
+    margin-top: auto;
+    margin-bottom: 8px;
+    color: $text-dark;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: normal;
+    }
+
+    @include vp-767 {
+      line-height: 12px;
+    }
+  }
+
+  & small {
+    color: $text-dark;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+
+    @include vp-1199 {}
+
+    @include vp-767 {}
+  }
+}
