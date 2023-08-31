@@ -4,12 +4,6 @@
   @include vp-1199 {
     padding-top: 33px;
   }
-
-  @include vp-767 {}
-
-
-  ///
-  margin-bottom: 300px;
 }
 
 .education__row {
@@ -104,25 +98,6 @@
       background-color: rgba($color-main, 0.2);
       bottom: 6px;
     }
-  }
-}
-
-.education__list-title,
-.education__info-title {
-  margin: 0;
-  color: $text-dark;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-
-  @include vp-1199 {
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  @include vp-767 {
-    font-size: 16px;
-    line-height: 16px;
   }
 }
 
