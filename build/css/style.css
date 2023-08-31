@@ -3224,7 +3224,6 @@ button,
             align-items: center;
     max-width: 100%;
     padding-right: 55px;
-    padding-bottom: 27px;
     position: relative;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -3295,6 +3294,7 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     padding-top: 27px;
+    padding-bottom: 20px;
   }
   .education__list li:nth-child(4n-1)::after {
     position: absolute;
@@ -3323,6 +3323,7 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     padding-top: 27px;
+    padding-bottom: 20px;
   }
   .education__list li:nth-child(4n)::after {
     position: absolute;
@@ -3531,8 +3532,13 @@ button,
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  padding-top: 100px;
+  padding-top: 87px;
   padding-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .about {
+    padding-top: 70px;
+  }
 }
 @media (max-width: 767px) {
   .about {
@@ -3548,19 +3554,36 @@ button,
 
 .about__col {
   width: 100%;
-  max-width: 48.75%;
+  max-width: 705px;
 }
-@media (max-width: 767px) {
-  .about__col {
-    max-width: 100%;
+.about__col--img {
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .about__col--img {
+    padding-top: 7px;
+  }
+}
+.about__col--img img {
+  max-width: none;
+  width: 808px;
+  height: 474px;
+}
+@media (max-width: 1199px) {
+  .about__col--img img {
+    width: 475px;
+    height: 402px;
   }
 }
 .about__col--text {
+  padding-top: 36px;
   padding-right: 120px;
 }
 @media (max-width: 1199px) {
   .about__col--text {
     padding-right: 45px;
+    padding-top: 0;
+    padding-left: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -3571,16 +3594,21 @@ button,
 }
 
 .about__title {
-  margin-bottom: 58px;
+  margin-bottom: 56px;
+}
+@media (max-width: 1199px) {
+  .about__title {
+    margin-bottom: 34px;
+  }
 }
 
 .about__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .about__descr {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   color: #2D383F;
   font-size: 14px;
   font-weight: 400;
@@ -3589,6 +3617,7 @@ button,
 @media (max-width: 767px) {
   .about__descr {
     line-height: 20px;
+    margin-bottom: 42px;
   }
 }
 
