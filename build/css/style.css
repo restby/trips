@@ -2555,7 +2555,7 @@ button,
     z-index: -1;
     width: 418px;
     height: 279px;
-    bottom: -37px;
+    bottom: -5.5%;
     left: 0;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -2584,7 +2584,7 @@ button,
   z-index: -1;
   width: 602px;
   height: 1364px;
-  bottom: -602px;
+  bottom: -81.5%;
   right: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -3534,6 +3534,7 @@ button,
           column-gap: 30px;
   padding-top: 87px;
   padding-bottom: 30px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .about {
@@ -3552,6 +3553,36 @@ button,
             column-gap: 0;
     padding-top: 17px;
     padding-bottom: 19px;
+  }
+}
+@media (min-width: 1199px) {
+  .about::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 618px;
+    height: 280px;
+    top: -13%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 618px auto;
+    background-image: url("../../img/decor/decor-4-desktop.png");
+  }
+}
+@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
+  .about::before {
+    background-image: url("../../img/decor/decor-4-desktop@2x.png");
+  }
+}
+@media (min-width: 1199px) {
+  .webp .about::before {
+    background-image: url("../../img/decor/decor-4-desktop.webp");
+  }
+}
+@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
+  .webp .about::before {
+    background-image: url("../../img/decor/decor-4-desktop@2x.webp");
   }
 }
 
@@ -3737,7 +3768,7 @@ button,
 }
 @media (max-width: 767px) {
   .review-slide__img-container {
-    margin-bottom: 17px;
+    margin-bottom: 13px;
   }
 }
 .review-slide__img-container img {
