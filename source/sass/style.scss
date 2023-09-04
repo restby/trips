@@ -1,6 +1,7 @@
 // Vendor
 // ---------------------------------
 @import "vendor/normalize";
+@import "vendor/leaflet";
 // Swiper 7.4.1
 @import "vendor/swiper";
 
@@ -41,6 +42,11 @@
 @import "blocks/review-slide";
 @import "blocks/features";
 @import "blocks/features-slide";
+@import "blocks/gallery";
+@import "blocks/question";
+@import "blocks/form";
+@import "blocks/contacts";
+@import "blocks/map";
 
 
 @import "blocks/page-footer";

@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/header/burger';
 import {play} from './modules/video-player';
 import {initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider} from './vendor/init-swiper';
+import {initMap} from './vendor/init-leaflet';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +12,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  play();
+  initToursSlider();
+  initEducationSlider();
+  initReviewsSlider();
+  initFeaturesSlider();
+  initMap();
 
   // Modules
   // ---------------------------------
@@ -23,12 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     const burger = new Burger();
     burger.init();
-    play();
     initHeroSlider();
-    initToursSlider();
-    initEducationSlider();
-    initReviewsSlider();
-    initFeaturesSlider();
   });
 });
 
