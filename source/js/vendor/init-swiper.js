@@ -3,6 +3,7 @@ const toursSlider = document.querySelector('.tours__slider');
 const educationSlider = document.querySelector('.education__slider');
 const reviewsSlider = document.querySelector('.reviews__slider');
 const featuresSlider = document.querySelector('.features__slider');
+const gallerySlider = document.querySelector('.gallery__slider');
 
 const initHeroSlider = () => {
   if (heroSlider) {
@@ -111,7 +112,6 @@ const initReviewsSlider = () => {
     });
   }
 }
-
 const initFeaturesSlider = () => {
   if (featuresSlider) {
     const swiper = new Swiper(featuresSlider, {
@@ -125,10 +125,6 @@ const initFeaturesSlider = () => {
         prevEl: '.features__arrow--prev',
       },
       breakpoints: {
-        // 767: {
-        //   slidesPerView: 6,
-        //   watchOverflow: true,
-        // },
         1199: {
           slidesPerView: 3,
           spaceBetween: 30,
@@ -137,4 +133,34 @@ const initFeaturesSlider = () => {
     });
   }
 }
-export { initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider }
+const initGallerySlider = () => {
+  if (gallerySlider) {
+    const swiper = new Swiper(gallerySlider, {
+      simulateTouch: false,
+      grabCursor: false,
+      watchOverflow: true,
+      speed: 500,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.gallery__arrow--next',
+        prevEl: '.gallery__arrow--prev',
+      },
+      breakpoints: {
+        // 320: {
+        //   slidesPerView: 1,
+        // },
+
+        // 767: {
+        //   slidesPerView: 1.26,
+        //   spaceBetween: 10,
+        // },
+
+        1199: {
+          slidesPerView: 5,
+          spaceBetween: 5,
+        }
+      },
+    });
+  }
+}
+export { initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider, initGallerySlider }
