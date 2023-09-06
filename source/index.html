@@ -1064,59 +1064,60 @@
               <div class="gallery__wrapper swiper-wrapper">
 
                 <div class="gallery__slide swiper-slide gallery-slide">
-                  <div class="gallery-slide__content">
-                    <div class="gallery-slide__img-container">
-                      <img width="275" height="449" src="img/gallery/img-1-desktop.jpg"
-                        srcset="img/gallery/img-1-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="gallery__slide swiper-slide gallery-slide gallery-slide--twice">
-                  <div class="gallery-slide__content">
-                    <div class="gallery-slide__img-container">
-                      <img width="298" height="179" src="img/gallery/img-2-desktop.jpg"
-                        srcset="img/gallery/img-2-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                    <div class="gallery-slide__img-container">
-                      <img width="298" height="265" src="img/gallery/img-3-desktop.jpg"
-                        srcset="img/gallery/img-3-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                  </div>
-
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-1-desktop.webp 1x, img/gallery/img-1-desktop@2x.webp 2x">
+                    <img width="275" height="449" src="img/gallery/img-1-desktop.jpg"
+                      srcset="img/gallery/img-1-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
                 </div>
 
                 <div class="gallery__slide swiper-slide gallery-slide">
-                  <div class="gallery-slide__content">
-                    <div class="gallery-slide__img-container">
-                      <img width="272" height="449" src="img/gallery/img-4-desktop.jpg"
-                        srcset="img/gallery/img-4-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="gallery__slide swiper-slide gallery-slide gallery-slide--twice">
-                  <div class="gallery-slide__content">
-                    <div class="gallery-slide__img-container">
-                      <img width="298" height="179" src="img/gallery/img-5-desktop.jpg"
-                        srcset="img/gallery/img-5-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                    <div class="gallery-slide__img-container">
-                      <img width="298" height="265" src="img/gallery/img-6-desktop.jpg"
-                        srcset="img/gallery/img-6-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                  </div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-2-desktop.webp 1x, img/gallery/img-2-desktop@2x.webp 2x">
+                    <img width="298" height="179" src="img/gallery/img-2-desktop.jpg"
+                      srcset="img/gallery/img-2-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-3-desktop.webp 1x, img/gallery/img-3-desktop@2x.webp 2x">
+                    <img width="298" height="265" src="img/gallery/img-3-desktop.jpg"
+                      srcset="img/gallery/img-3-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
                 </div>
 
                 <div class="gallery__slide swiper-slide gallery-slide">
-                  <div class="gallery-slide__content">
-                    <div class="gallery-slide__img-container">
-                      <img width="275" height="449" src="img/gallery/img-7-desktop.jpg"
-                        srcset="img/gallery/img-7-desktop@2x.jpg 2x" alt="Фото из галлереи.">
-                    </div>
-                  </div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-4-desktop.webp 1x, img/gallery/img-4-desktop@2x.webp 2x">
+                    <img width="275" height="449" src="img/gallery/img-4-desktop.jpg"
+                      srcset="img/gallery/img-4-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
+                </div>
 
+                <div class="gallery__slide swiper-slide gallery-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-5-desktop.webp 1x, img/gallery/img-5-desktop@2x.webp 2x">
+                    <img width="298" height="179" src="img/gallery/img-5-desktop.jpg"
+                      srcset="img/gallery/img-5-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-6-desktop.webp 1x, img/gallery/img-6-desktop@2x.webp 2x">
+                    <img width="298" height="265" src="img/gallery/img-6-desktop.jpg"
+                      srcset="img/gallery/img-6-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
+                </div>
+
+                <div class="gallery__slide swiper-slide gallery-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-7-desktop.webp 1x, img/gallery/img-7-desktop@2x.webp 2x">
+                    <img width="275" height="449" src="img/gallery/img-7-desktop.jpg"
+                      srcset="img/gallery/img-7-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
                 </div>
 
               </div>
@@ -1125,10 +1126,28 @@
         </section>
         <section class="question">
           <div class="container">
+            <h2 class="question__title">Остались вопросы?</h2>
+            <p class="question__descr">Заполните форму и наш оператор свяжется с вами для консультации.</p>
             <div class="question__form">
-              <h2 class="question__title"></h2>
-              <p class="question__descr"></p>
-              <form action=""></form>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="form__container">
+                  <div class="form__field form__field--name" data-validate-type="text"
+                    data-on-input-validate="data-on-input-validate" data-limitation="name"
+                    data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
+                    data-required="data-required">
+                    <label class="visually-hidden" for="user-name">Имя</label>
+                    <input id="user-name" name="user-name" type="text" placeholder="Как к вам обращаться?">
+                  </div>
+                  <div class="form__field form__field--phone" data-on-input-validate="data-on-input-validate"
+                    data-validate-type="phone" data-message-base="Обязательное поле"
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно" data-required="data-required">
+                    <label class="visually-hidden" for="user-phone">Телефон</label>
+                    <input id="user-phone" name="user-phone" type="tel" placeholder="Телефон">
+                  </div>
+                  <button type="submit">отправить</button>
+                </div>
+              </form>
             </div>
           </div>
         </section>
