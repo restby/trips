@@ -5,7 +5,32 @@
   column-gap: 30px;
   // flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   margin: 0 auto;
+
+  & button[type=submit] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    max-width: 238px;
+    min-height: 64px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    transition: background-color, border, color $trans-default;
+    border: 1px solid $color-transparent;
+    color: $text-light;
+    background-color: $color-main;
+  }
+}
+
+.form__field {
+  width: 100%;
+  max-width: 340px;
+  position: relative;
 
   & input {
     border: 1px solid rgba(2, 102, 193, 0.10);
@@ -18,6 +43,10 @@
 
     @include hover {
       border: 1px solid $color-main;
+
+      &::placeholder {
+        color: $color-main;
+      }
     }
 
     @include focus {
@@ -27,6 +56,13 @@
 
     @include active {
       border: 1px solid $color-active;
+    }
+
+    &::placeholder {
+      color: rgba($text-dark, 0.5);
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
     }
 
     &:disabled {
@@ -47,32 +83,23 @@
       max-width: none;
     }
   }
-
-  & button[type=submit] {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    max-width: 238px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 16px;
-    transition: background-color, border, color $trans-default;
-    border: 1px solid $color-transparent;
-    color: $text-light;
-    background-color: $color-main;
-  }
 }
 
-.form__field {
-  width: 100%;
-  max-width: 340px;
+.form__field .is-valid,
+.form__field .is-invalid {
+  position: absolute;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 300;
+  color: $text-light;
+  left: 0;
+  top: 70px;
 }
 
-.form__field--name {}
+.form__field .is-invalid {
+  color: $color-error;
+}
 
-.visually-hidden {}
-
-.form__field--phone {}
+.form__field.is-invalid input {
+  border: 1px solid $color-error;
+}

@@ -1125,29 +1125,46 @@
           </div>
         </section>
         <section class="question">
-          <div class="container">
-            <h2 class="question__title">Остались вопросы?</h2>
-            <p class="question__descr">Заполните форму и наш оператор свяжется с вами для консультации.</p>
-            <div class="question__form form">
-              <form action="https://echo.htmlacademy.ru/" method="get">
-                <div class="form__container">
-                  <div class="form__field form__field--name" data-validate-type="text"
-                    data-on-input-validate="data-on-input-validate" data-limitation="name"
-                    data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
-                    data-required="data-required">
-                    <label class="visually-hidden" for="user-name">Имя</label>
-                    <input id="user-name" name="user-name" type="text" placeholder="Как к вам обращаться?">
+          <div class="question__img-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1199px)"
+                srcset="img/form-bg-desktop.webp 1x, img/form-bg-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 767px)"
+                srcset="img/form-bg-tablet.webp 1x, img/form-bg-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/form-bg-mobile.webp 1x, img/form-bg-mobile@2x.webp 2x">
+              <source media="(min-width: 1199px)" srcset="img/form-bg-desktop.png 1x, img/form-bg-desktop@2x.png 2x">
+              <source media="(min-width: 767px)" srcset="img/form-bg-tablet.png 1x, img/form-bg-tablet@2x.png 2x">
+              <source media="(max-width: 767px)" srcset="img/form-bg-mobile.png 1x, img/form-bg-mobile@2x.png 2x">
+              <img width="1440" height="800" src="img/form-bg-desktop.png" srcset="img/form-bg-desktop@2x.png 2x"
+                alt="">
+            </picture>
+          </div>
+          <div class="question__wrapper">
+            <div class="container">
+              <h2 class="question__title">Остались вопросы?</h2>
+              <p class="question__descr">Заполните форму и наш оператор свяжется с вами для консультации.</p>
+              <div class="question__form form" data-form-validate="data-form-validate" data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="form__container">
+                    <div class="form__field form__field--name" data-validate-type="text"
+                      data-on-input-validate="data-on-input-validate" data-limitation="name"
+                      data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
+                      data-required="data-required">
+                      <label class="visually-hidden" for="user-name">Имя</label>
+                      <input id="user-name" name="user-name" type="text" placeholder="Как к вам обращаться?">
+                    </div>
+                    <div class="form__field form__field--phone" data-on-input-validate="data-on-input-validate"
+                      data-validate-type="phone" data-message-base="Обязательное поле"
+                      data-message-extra="Проверьте корректность заполнения поля"
+                      data-message-success="Поле заполнено верно" data-required="data-required">
+                      <label class="visually-hidden" for="user-phone">Телефон</label>
+                      <input id="user-phone" name="user-phone" type="tel" placeholder="Телефон">
+                    </div>
+                    <button type="submit">отправить</button>
                   </div>
-                  <div class="form__field form__field--phone" data-on-input-validate="data-on-input-validate"
-                    data-validate-type="phone" data-message-base="Обязательное поле"
-                    data-message-extra="Проверьте корректность заполнения поля"
-                    data-message-success="Поле заполнено верно" data-required="data-required">
-                    <label class="visually-hidden" for="user-phone">Телефон</label>
-                    <input id="user-phone" name="user-phone" type="tel" placeholder="Телефон">
-                  </div>
-                  <button type="submit">отправить</button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </section>

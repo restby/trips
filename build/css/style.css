@@ -2734,7 +2734,7 @@ button,
   }
 }
 .nav__list--footer {
-  max-width: 740px;
+  max-width: 655px;
   -webkit-column-gap: 22px;
      -moz-column-gap: 22px;
           column-gap: 22px;
@@ -4879,9 +4879,39 @@ button,
   }
 }
 
+.question {
+  min-height: 800px;
+  padding-top: 313px;
+  background-color: #5f7c52;
+  position: relative;
+}
+
+.question__img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.question__img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.question__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
 .question__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  text-align: center;
   color: #ffffff;
   font-size: 35px;
   font-weight: 800;
@@ -4905,7 +4935,7 @@ button,
 
 .question__descr {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
@@ -4939,46 +4969,10 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 auto;
-}
-.form__container input {
-  border: 1px solid rgba(2, 102, 193, 0.1);
-  background: #ffffff;
-  min-height: 64px;
-  width: 100%;
-  max-width: 340px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (hover: hover) {
-  .form__container input:hover:not(.focus-visible) {
-    border: 1px solid #0266c1;
-  }
-}
-.form__container input.focus-visible:focus {
-  border: 1px solid #1c3374;
-  outline: none;
-}
-.form__container input:active {
-  border: 1px solid #1c3374;
-}
-.form__container input:disabled {
-  border: 1px solid rgba(2, 102, 193, 0.1);
-}
-.form__container input--error {
-  border: 1px solid #ff121f;
-}
-@media (max-width: 1199px) {
-  .form__container input {
-    min-height: 50px;
-    min-width: 266px;
-  }
-}
-@media (max-width: 767px) {
-  .form__container input {
-    min-height: 52px;
-    max-width: none;
-  }
 }
 .form__container button[type=submit] {
   display: -webkit-inline-box;
@@ -4994,6 +4988,7 @@ button,
   padding: 10px;
   width: 100%;
   max-width: 238px;
+  min-height: 64px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -5007,6 +5002,115 @@ button,
 .form__field {
   width: 100%;
   max-width: 340px;
+  position: relative;
+}
+.form__field input {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  background: #ffffff;
+  min-height: 64px;
+  width: 100%;
+  max-width: 340px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (hover: hover) {
+  .form__field input:hover:not(.focus-visible) {
+    border: 1px solid #0266c1;
+  }
+  .form__field input:hover:not(.focus-visible)::-webkit-input-placeholder {
+    color: #0266c1;
+  }
+  .form__field input:hover:not(.focus-visible)::-moz-placeholder {
+    color: #0266c1;
+  }
+  .form__field input:hover:not(.focus-visible):-ms-input-placeholder {
+    color: #0266c1;
+  }
+  .form__field input:hover:not(.focus-visible)::-ms-input-placeholder {
+    color: #0266c1;
+  }
+  .form__field input:hover:not(.focus-visible)::placeholder {
+    color: #0266c1;
+  }
+}
+.form__field input.focus-visible:focus {
+  border: 1px solid #1c3374;
+  outline: none;
+}
+.form__field input:active {
+  border: 1px solid #1c3374;
+}
+.form__field input::-webkit-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.form__field input::-moz-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.form__field input:-ms-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.form__field input::-ms-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.form__field input::placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.form__field input:disabled {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+.form__field input--error {
+  border: 1px solid #ff121f;
+}
+@media (max-width: 1199px) {
+  .form__field input {
+    min-height: 50px;
+    min-width: 266px;
+  }
+}
+@media (max-width: 767px) {
+  .form__field input {
+    min-height: 52px;
+    max-width: none;
+  }
+}
+
+.form__field .is-valid,
+.form__field .is-invalid {
+  position: absolute;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 300;
+  color: #ffffff;
+  left: 0;
+  top: 70px;
+}
+
+.form__field .is-invalid {
+  color: #ff121f;
+}
+
+.form__field.is-invalid input {
+  border: 1px solid #ff121f;
+}
+
+.contacts {
+  padding-top: 84px;
+  margin-bottom: 105px;
 }
 
 .contacts__container {
@@ -5053,7 +5157,7 @@ button,
 }
 
 .contacts__title {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 @media (max-width: 1199px) {
   .contacts__title {
@@ -5187,6 +5291,7 @@ button,
   background-image: url("../../img/svg/pin-stroke.svg");
 }
 .contacts__info-item span {
+  margin-bottom: 7px;
   color: #2d383f;
   font-size: 18px;
   font-weight: 600;
@@ -5320,9 +5425,6 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
