@@ -1,8 +1,10 @@
 .features-slide {
-  max-width: 380px;
+  width: 380px;
   border: 1px solid rgba(2, 102, 193, 0.10);
+  background-color: $color-default-white;
   padding: 40px 20px;
-  min-height: 329px;
+  // min-height: 329px;
+  height: auto;
 }
 
 .features-slide__container {}

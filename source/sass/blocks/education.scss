@@ -293,6 +293,34 @@
   flex-wrap: nowrap;
   position: relative;
 
+  &--1 svg {
+    @include vp-767 {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &--2 svg {
+    @include vp-767 {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &--3 svg {
+    @include vp-767 {
+      width: 19px;
+      height: 22px;
+    }
+  }
+
+  &--4 svg {
+    @include vp-767 {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
   &--1 p {
     @include vp-1199 {
       order: 1;

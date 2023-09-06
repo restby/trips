@@ -96,18 +96,11 @@ const initReviewsSlider = () => {
       },
       slidesPerView: 'auto',
       breakpoints: {
-        // 320: {
-        //   slidesPerView: 1,
-        // },
-
         767: {
-          // slidesPerView: 1.26,
-          spaceBetween: 10,
+          spaceBetween: 30,
         },
-
         1199: {
-          // slidesPerView: 1.63,
-          spaceBetween: 10,
+          spaceBetween: 30,
         }
       },
     });
@@ -121,13 +114,13 @@ const initFeaturesSlider = () => {
       watchOverflow: true,
       speed: 500,
       autoHeight: true,
+      slidesPerView: 'auto',
       navigation: {
         nextEl: '.features__arrow--next',
         prevEl: '.features__arrow--prev',
       },
       breakpoints: {
         1199: {
-          slidesPerView: 3,
           spaceBetween: 30,
         }
       },
@@ -141,23 +134,22 @@ const initGallerySlider = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 500,
-      autoHeight: true,
       navigation: {
         nextEl: '.gallery__arrow--next',
         prevEl: '.gallery__arrow--prev',
       },
-      breakpoints: {
-        // 320: {
-        //   slidesPerView: 1,
-        // },
 
-        // 767: {
-        //   slidesPerView: 1.26,
-        //   spaceBetween: 10,
-        // },
+      slidesPerView: 'auto',
+      breakpoints: {
+        320: {
+          spaceBetween: 3,
+        },
+
+        767: {
+          spaceBetween: 5,
+        },
 
         1199: {
-          slidesPerView: 5,
           spaceBetween: 5,
         }
       },

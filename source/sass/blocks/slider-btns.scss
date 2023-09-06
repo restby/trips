@@ -1,6 +1,7 @@
 .slider-btns {
   display: inline-flex;
   column-gap: 4px;
+  flex-shrink: 0;
 }
 
 .slider-btns__arrow {

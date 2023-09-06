@@ -1,10 +1,83 @@
-.features {}
+.features {
+  position: relative;
+  margin-bottom: 130px;
 
-.features__title {
-  margin-bottom: 50px;
+  &::before {
+    @include vp-1200 {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      width: 705px;
+      height: 391px;
+      top: -52.5%;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 705px auto;
+      background-image: url("../../img/decor/decor-5-desktop.png");
+
+      @include retina {
+        background-image: url("../../img/decor/decor-5-desktop@2x.png");
+      }
+    }
+  }
+
+  .webp & {
+    @include vp-1200 {
+      &::before {
+        background-image: url("../../img/decor/decor-5-desktop.webp");
+
+        @include retina {
+          background-image: url("../../img/decor/decor-5-desktop@2x.webp");
+        }
+      }
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 602px;
+    height: 263px;
+    top: -12.5%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 602px auto;
+    background-image: url("../../img/decor/decor-6-desktop.png");
+
+    @include retina {
+      background-image: url("../../img/decor/decor-6-desktop@2x.png");
+    }
+  }
+
+  .webp & {
+    &::after {
+      background-image: url("../../img/decor/decor-6-desktop.webp");
+
+      @include retina {
+        background-image: url("../../img/decor/decor-6-desktop@2x.webp");
+      }
+    }
+  }
 }
 
-.features__slider-container {}
+.features__title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 100%;
+
+  & span {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features__slider-container {
+  margin-bottom: 45px;
+}
 
 .features__slider {}
 
@@ -12,4 +85,8 @@
 
 .features__slide {}
 
-.features__btns {}
+.features__btns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

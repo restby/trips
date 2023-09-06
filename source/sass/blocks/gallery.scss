@@ -1,7 +1,7 @@
 .gallery {}
 
 .gallery__title {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .gallery__row {
@@ -20,6 +20,7 @@
 
 .gallery__descr {
   margin: 0;
+  max-width: 695px;
   color: $text-dark;
   font-size: 16px;
   font-weight: 400;
@@ -38,5 +39,6 @@
 
 .gallery__slider-container {
   max-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
 }

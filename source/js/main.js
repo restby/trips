@@ -12,13 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  play();
-  initToursSlider();
-  initEducationSlider();
-  initReviewsSlider();
-  initFeaturesSlider();
-  initGallerySlider();
-  initMap();
+
+  const burger = new Burger();
+  burger.init();
+  initHeroSlider();
 
   // Modules
   // ---------------------------------
@@ -29,9 +26,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    const burger = new Burger();
-    burger.init();
-    initHeroSlider();
+    initToursSlider();
+    play();
+    initEducationSlider();
+    initReviewsSlider();
+    initFeaturesSlider();
+    initGallerySlider();
+    initMap();
   });
 });
 
