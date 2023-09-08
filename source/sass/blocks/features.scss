@@ -3,7 +3,7 @@
   margin-bottom: 130px;
 
   @include vp-1199 {
-    height: 982px;
+    // height: 982px;
     margin-bottom: 70px;
   }
 
@@ -74,7 +74,7 @@
 
 .features__title {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   text-align: center;
   max-width: 100%;
 
@@ -85,14 +85,16 @@
 }
 
 .features__slider-container {
-  margin-bottom: 45px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
-.features__slider {}
+// .features__slider {}
 
-.features__wrapper {}
+// .features__wrapper {}
 
-.features__slide {}
+// .features__slide {}
 
 .features__btns {
   display: flex;

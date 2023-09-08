@@ -4517,7 +4517,7 @@ button,
 }
 
 .reviews {
-  margin-bottom: 124px;
+  margin-bottom: 128px;
 }
 @media (max-width: 1199px) {
   .reviews {
@@ -4710,7 +4710,6 @@ button,
 }
 @media (max-width: 1199px) {
   .features {
-    height: 982px;
     margin-bottom: 70px;
   }
 }
@@ -4773,7 +4772,7 @@ button,
 
 .features__title {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   text-align: center;
   max-width: 100%;
 }
@@ -4785,7 +4784,9 @@ button,
 }
 
 .features__slider-container {
-  margin-bottom: 45px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .features__btns {
@@ -4802,8 +4803,10 @@ button,
   width: 380px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: #ffffff;
-  padding: 40px 20px;
-  height: auto;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 329px;
 }
 
 .features-slide__content {
@@ -4886,6 +4889,7 @@ button,
 }
 .features-slide__content p {
   margin: 0;
+  margin-bottom: 40px;
   color: #2d383f;
   text-align: center;
   font-size: 14px;

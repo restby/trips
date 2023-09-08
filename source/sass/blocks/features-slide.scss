@@ -2,9 +2,10 @@
   width: 380px;
   border: 1px solid rgba(2, 102, 193, 0.10);
   background-color: $color-default-white;
-  padding: 40px 20px;
-  // min-height: 329px;
-  height: auto;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 329px;
 }
 
 .features-slide__container {}
@@ -75,6 +76,7 @@
 
   & p {
     margin: 0;
+    margin-bottom: 40px;
     color: $text-dark;
     text-align: center;
     font-size: 14px;

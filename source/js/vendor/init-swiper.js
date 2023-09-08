@@ -113,17 +113,16 @@ const initFeaturesSlider = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 500,
-      autoHeight: true,
+      // autoHeight: true,
       slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
       navigation: {
         nextEl: '.features__arrow--next',
         prevEl: '.features__arrow--prev',
       },
-      breakpoints: {
-        1199: {
-          spaceBetween: 30,
-        }
-      },
+      spaceBetween: 30,
+      initialSlide: 2,
     });
   }
 }
