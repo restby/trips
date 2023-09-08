@@ -1,12 +1,12 @@
 .hero {
-  margin-top: -62px;
+  margin-top: -103px;
 
   @include vp-1199 {
-    margin-top: -44px;
+    margin-top: -74px;
   }
 
   @include vp-767 {
-    margin-top: -63px;
+    margin-top: -77px;
   }
 }
 
@@ -14,12 +14,6 @@
   max-width: 1440px;
   margin: 0 auto;
 }
-
-// .hero__slider {}
-
-// .hero__wrapper {}
-
-// .hero__slide {}
 
 .hero__slider-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   opacity: 1;

@@ -27,6 +27,7 @@
   line-height: 24px;
 
   @include vp-1199 {
+    max-width: 395px;
     font-size: 14px;
     line-height: 22px;
   }

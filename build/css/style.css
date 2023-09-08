@@ -2166,9 +2166,10 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  min-width: 320px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 120px;
+  padding: 0 20px;
 }
 @media (max-width: 1199px) {
   .container {
@@ -2415,30 +2416,27 @@ button,
   opacity: 0.3;
 }
 
+.page-header {
+  padding-top: 41px;
+}
+@media (max-width: 1199px) {
+  .page-header {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .page-header {
+    padding-top: 8px;
+  }
+}
+
 .page-header__container {
   position: relative;
   z-index: 30;
-  -webkit-transform: translateY(40px);
-      -ms-transform: translateY(40px);
-          transform: translateY(40px);
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
-}
-@media (max-width: 1199px) {
-  .page-header__container {
-    -webkit-transform: translateY(30px);
-        -ms-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-}
-@media (max-width: 767px) {
-  .page-header__container {
-    -webkit-transform: translateY(8px);
-        -ms-transform: translateY(8px);
-            transform: translateY(8px);
-  }
 }
 .page-header__container.is-open .page-header__logo svg {
   color: #2d383f;
@@ -2537,13 +2535,43 @@ button,
   }
 }
 
+.page-header__logo {
+  margin-right: 10px;
+}
+@media (max-width: 1199px) {
+  .page-header__logo {
+    margin-right: 0;
+  }
+}
+
+.page-header__phone {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 10px;
+  max-width: 145px;
+}
+@media (max-width: 1199px) {
+  .page-header__phone {
+    margin-left: 0;
+    z-index: 21;
+  }
+}
+@media (max-width: 767px) {
+  .page-header__phone {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: none;
+  }
+}
+
 .page-header__link--phone {
   color: #ffffff;
   text-align: right;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  text-align: right;
 }
 @media (max-width: 1199px) {
   .page-header__link--phone {
@@ -2555,7 +2583,8 @@ button,
   .page-header__link--phone {
     font-size: 14px;
     line-height: 14px;
-    width: 100%;
+    text-align: right;
+    margin-left: auto;
   }
 }
 @media (hover: hover) {
@@ -2580,6 +2609,7 @@ button,
     -webkit-transform: translateX(50px);
         -ms-transform: translateX(50px);
             transform: translateX(50px);
+    z-index: 21;
   }
 }
 @media (max-width: 767px) {
@@ -2689,7 +2719,8 @@ button,
   }
 }
 .is-open .nav--header {
-  top: 94px;
+  top: 0;
+  padding-top: 94px;
   opacity: 1;
   pointer-events: all;
   visibility: visible;
@@ -2739,6 +2770,7 @@ button,
      -moz-column-gap: 22px;
           column-gap: 22px;
   row-gap: 15px;
+  padding-top: 20px;
 }
 @media (max-width: 1199px) {
   .nav__list--footer {
@@ -2859,16 +2891,16 @@ button,
 }
 
 .hero {
-  margin-top: -62px;
+  margin-top: -103px;
 }
 @media (max-width: 1199px) {
   .hero {
-    margin-top: -44px;
+    margin-top: -74px;
   }
 }
 @media (max-width: 767px) {
   .hero {
-    margin-top: -63px;
+    margin-top: -77px;
   }
 }
 
@@ -4425,6 +4457,7 @@ button,
 @media (max-width: 1199px) {
   .reviews {
     padding-top: 0;
+    margin-bottom: 77px;
   }
 }
 
@@ -4612,6 +4645,17 @@ button,
 .features {
   position: relative;
   margin-bottom: 130px;
+}
+@media (max-width: 1199px) {
+  .features {
+    height: 982px;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .features {
+    padding: 0 15px;
+  }
 }
 @media (min-width: 1199px) {
   .features::before {
@@ -4821,6 +4865,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gallery__descr {
+    max-width: 395px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -5425,9 +5470,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-column-gap: 99px;
+     -moz-column-gap: 99px;
+          column-gap: 99px;
 }
 @media (max-width: 1199px) {
   .page-footer__wrapper {
@@ -5438,7 +5483,6 @@ button,
 }
 
 .page-footer__logo {
-  margin-right: auto;
   margin-bottom: 16px;
 }
 @media (max-width: 1199px) {
@@ -5471,6 +5515,7 @@ button,
 }
 .page-footer__link--phone {
   margin-left: auto;
+  margin-top: 21px;
   color: #2d383f;
   text-align: right;
   font-size: 18px;

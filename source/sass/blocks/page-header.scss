@@ -1,16 +1,21 @@
-.page-header__container {
-  position: relative;
-  z-index: 30;
-  transform: translateY(40px);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+.page-header {
+  padding-top: 41px;
 
   @include vp-1199 {
-    transform: translateY(30px);
+    padding-top: 30px;
   }
 
   @include vp-767 {
-    transform: translateY(8px);
+    padding-top: 8px;
   }
+}
+
+.page-header__container {
+  position: relative;
+  z-index: 30;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+
 
   &.is-open .page-header__logo svg {
     color: $text-dark;
@@ -93,13 +98,38 @@
   }
 }
 
+.page-header__logo {
+  margin-right: 10px;
+
+  @include vp-1199 {
+    margin-right: 0;
+  }
+}
+
+.page-header__phone {
+  flex-shrink: 0;
+  margin-left: 10px;
+  max-width: 145px;
+
+  @include vp-1199 {
+    margin-left: 0;
+    z-index: 21;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    display: flex;
+    max-width: none;
+  }
+}
+
 .page-header__link--phone {
+
   color: $text-light;
   text-align: right;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  text-align: right;
 
   @include vp-1199 {
     font-size: 16px;
@@ -109,7 +139,8 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
-    width: 100%;
+    text-align: right;
+    margin-left: auto;
   }
 
   @include hover-focus {
