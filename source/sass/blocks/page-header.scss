@@ -15,8 +15,6 @@
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
-
-
   &.is-open .page-header__logo svg {
     color: $text-dark;
   }
@@ -30,6 +28,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
+  margin-left: -2px;
   color: $color-dark;
   display: none;
   padding: 0;

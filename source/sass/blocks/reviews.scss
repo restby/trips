@@ -1,9 +1,7 @@
 .reviews {
-  padding-top: 11px;
   margin-bottom: 124px;
 
   @include vp-1199 {
-    padding-top: 0;
     margin-bottom: 77px;
   }
 }

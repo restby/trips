@@ -1,8 +1,12 @@
 .education {
-  padding-top: 75px;
+  margin-bottom: 87px;
 
   @include vp-1199 {
-    padding-top: 33px;
+    margin-bottom: 70px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 17px;
   }
 }
 

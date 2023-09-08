@@ -1,9 +1,9 @@
-const heroSlider = document.querySelector('.hero__slider');
-const toursSlider = document.querySelector('.tours__slider');
-const educationSlider = document.querySelector('.education__slider');
-const reviewsSlider = document.querySelector('.reviews__slider');
-const featuresSlider = document.querySelector('.features__slider');
-const gallerySlider = document.querySelector('.gallery__slider');
+const heroSlider = document.querySelector('[data-hero__slider]');
+const toursSlider = document.querySelector('[data-tours__slider]');
+const educationSlider = document.querySelector('[data-education__slider]');
+const reviewsSlider = document.querySelector('[data-reviews__slider]');
+const featuresSlider = document.querySelector('[data-features__slider]');
+const gallerySlider = document.querySelector('[data-gallery__slider]');
 
 const initHeroSlider = () => {
   if (heroSlider) {

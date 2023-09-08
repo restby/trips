@@ -1,8 +1,15 @@
 .question {
   min-height: 800px;
   padding-top: 313px;
+  margin-bottom: 84px;
   background-color: #5f7c52;
   position: relative;
+
+  @include vp-1199 {
+    min-height: 679px;
+    padding-top: 195px;
+    margin-bottom: 87px;
+  }
 }
 
 .question__img-container {
@@ -38,7 +45,7 @@
 
 
   @include vp-1199 {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -61,6 +68,7 @@
   line-height: 24px;
 
   @include vp-1199 {
+    margin: 0 auto;
     margin-bottom: 30px;
     max-width: 295px;
     text-align: left;

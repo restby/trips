@@ -38,6 +38,18 @@
   }
 }
 
+.gallery__btns {
+  @include vp-1199 {
+    align-self: center;
+  }
+}
+
+.gallery__row {
+  @include vp-1199 {
+    margin-bottom: 37px;
+  }
+}
+
 .gallery__slider-container {
   max-width: 1440px;
   min-width: 320px;
