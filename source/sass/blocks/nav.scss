@@ -58,48 +58,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  &--header {
-    column-gap: 21px;
-    row-gap: 22px;
-
-    @include vp-1199 {
-      flex-direction: column;
-      max-width: unset;
-      margin-bottom: 67px;
-    }
-
-    @include vp-767 {
-      align-items: flex-start;
-      row-gap: 16px;
-      margin-bottom: 48px;
-    }
-  }
-
-  &--footer {
-    max-width: 655px;
-    column-gap: 22px;
-    row-gap: 15px;
-    padding-top: 20px;
-    margin-bottom: 15px;
-
-    @include vp-1199 {
-      padding-top: 0;
-      max-width: none;
-      column-gap: 10px;
-    }
-
-    @include vp-767 {
-      max-width: none;
-      width: 100%;
-      margin-bottom: 10px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 9px;
-      grid-auto-flow: dense;
-    }
-  }
-
   & a {
     padding: 3px 5px;
     text-decoration: none;
@@ -122,6 +80,21 @@
 }
 
 .nav__list--header {
+  column-gap: 21px;
+  row-gap: 22px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    max-width: unset;
+    margin-bottom: 67px;
+  }
+
+  @include vp-767 {
+    align-items: flex-start;
+    row-gap: 16px;
+    margin-bottom: 48px;
+  }
+
   & li {
     @include vp-1199 {
       opacity: 0;
@@ -175,6 +148,29 @@
 }
 
 .nav__list--footer {
+  max-width: 655px;
+  column-gap: 22px;
+  row-gap: 15px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+
+  @include vp-1199 {
+    padding-top: 0;
+    max-width: none;
+    column-gap: 10px;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 9px;
+    grid-auto-flow: dense;
+  }
+
   & li {
     &:nth-child(6n-5) {
       @include vp-767 {
