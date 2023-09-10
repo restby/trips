@@ -26,6 +26,7 @@
   }
 
   @include vp-767 {
+    min-height: 466px;
     flex-direction: column;
     padding-right: 20px;
   }
@@ -59,11 +60,9 @@
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  // padding-bottom: 16px;
 
   @include vp-1199 {
     padding-top: 3px;
-    // padding-bottom: 0;
   }
 
   & p {

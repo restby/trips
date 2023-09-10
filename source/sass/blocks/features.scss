@@ -1,15 +1,14 @@
 .features {
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 126px;
 
   @include vp-1199 {
-    // height: 982px;
-    margin-bottom: 70px;
+    margin-bottom: 83px;
   }
 
-  // @include vp-767 {
-  //   padding: 0 15px;
-  // }
+  @include vp-767 {
+    margin-bottom: 57px;
+  }
 
   &::before {
     @include vp-1200 {
@@ -32,6 +31,14 @@
   }
 
   .webp & {
+    &::after {
+      background-image: url("../../img/decor/decor-6-desktop.webp");
+
+      @include retina {
+        background-image: url("../../img/decor/decor-6-desktop@2x.webp");
+      }
+    }
+
     @include vp-1200 {
       &::before {
         background-image: url("../../img/decor/decor-5-desktop.webp");
@@ -60,16 +67,6 @@
       background-image: url("../../img/decor/decor-6-desktop@2x.png");
     }
   }
-
-  .webp & {
-    &::after {
-      background-image: url("../../img/decor/decor-6-desktop.webp");
-
-      @include retina {
-        background-image: url("../../img/decor/decor-6-desktop@2x.webp");
-      }
-    }
-  }
 }
 
 .features__title {
@@ -77,6 +74,10 @@
   margin-bottom: 47px;
   text-align: center;
   max-width: 100%;
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 
   & span {
     left: 50%;
@@ -88,16 +89,47 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 48px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
-// .features__slider {}
+.features__slider {
+  @include vp-767 {
+    overflow: visible;
+  }
+}
 
-// .features__wrapper {}
+.features__wrapper {
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    justify-items: center;
+  }
 
-// .features__slide {}
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
 
 .features__btns {
   display: flex;
   width: 100%;
   justify-content: center;
+
+  @include vp-1199 {
+    display: none;
+  }
 }

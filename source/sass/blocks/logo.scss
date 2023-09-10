@@ -8,7 +8,6 @@
     @include vp-767 {
       transform: translateX(0);
       margin-left: auto;
-      // margin-top: 7px;
       margin-bottom: 8px;
     }
   }
@@ -22,17 +21,34 @@
 
 .logo__link {
   display: block;
-  width: 205px;
-  height: 62px;
 
-  @include vp-1199 {
-    width: 144px;
-    height: 44px;
+  .page-header & {
+    width: 205px;
+    height: 62px;
+
+    @include vp-1199 {
+      width: 144px;
+      height: 44px;
+    }
+
+    @include vp-767 {
+      width: 112px;
+      height: 34px;
+    }
   }
 
-  @include vp-767 {
-    width: 112px;
-    height: 34px;
+  .page-footer & {
+    width: 205px;
+    height: 60px;
+
+    @include vp-1199 {
+      width: 118px;
+      height: 34px;
+    }
+
+    @include vp-767 {
+      width: 112px;
+    }
   }
 
   @include hover-focus {

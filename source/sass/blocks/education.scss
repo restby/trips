@@ -27,11 +27,11 @@
 .education__slider-container {
   position: relative;
   width: 100%;
-  max-width: 1460px;
+  max-width: 1260px;
   margin: 0 auto;
   margin-bottom: 41px;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include vp-1199 {
     padding-left: 35px;
@@ -44,12 +44,6 @@
     padding-right: 10px;
     margin-bottom: 22px;
   }
-}
-
-.education__wrapper {
-  @include vp-1199 {}
-
-  @include vp-767 {}
 }
 
 .education__title {
@@ -278,18 +272,6 @@
       }
     }
   }
-
-  // &::before {
-  //   @include vp-767 {
-  //     position: absolute;
-  //     content: "";
-  //     width: 1px;
-  //     top: 0;
-  //     left: 6px;
-  //     bottom: 14px;
-  //     background-color: rgba($color-main, 0.2);
-  //   }
-  // }
 }
 
 .education__item {
@@ -329,68 +311,24 @@
     @include vp-1199 {
       order: 1;
     }
-
-    // &::before {
-    //   width: 25px;
-    //   height: 25px;
-    //   background-image: url("../../img/svg/map.svg");
-
-    //   @include vp-767 {
-    //     width: 19px;
-    //     height: 19px;
-    //   }
-    // }
   }
 
   &--2 p {
     @include vp-1199 {
       order: 2;
     }
-
-    // &::before {
-    //   width: 24px;
-    //   height: 24px;
-    //   background-image: url("../../img/svg/boots.svg");
-
-    //   @include vp-767 {
-    //     width: 19px;
-    //     height: 19px;
-    //   }
-    // }
   }
 
   &--3 p {
     @include vp-1199 {
       order: 4;
     }
-
-    // &::before {
-    //   width: 23px;
-    //   height: 23px;
-    //   background-image: url("../../img/svg/pine-tree.svg");
-
-    //   @include vp-767 {
-    //     width: 19px;
-    //     height: 22px;
-    //   }
-    // }
   }
 
   &--4 p {
     @include vp-1199 {
       order: 3;
     }
-
-    // &::before {
-    //   width: 25px;
-    //   height: 25px;
-    //   background-image: url("../../img/svg/mountain.svg");
-
-    //   @include vp-767 {
-    //     width: 19px;
-    //     height: 19px;
-    //   }
-    // }
   }
 }
 
@@ -410,20 +348,4 @@
 
 .education__item-text {
   margin: 0;
-  // padding-left: 40px;
-  // position: relative;
-
-  @include vp-767 {
-    // padding-left: 30px;
-  }
-
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   left: 0;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
 }

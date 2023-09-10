@@ -106,9 +106,9 @@ const initReviewsSlider = () => {
     });
   }
 }
-const initFeaturesSlider = () => {
+const createFeaturesSlider = () => {
   if (featuresSlider) {
-    const swiper = new Swiper(featuresSlider, {
+    return new Swiper(featuresSlider, {
       simulateTouch: false,
       grabCursor: false,
       watchOverflow: true,
@@ -125,7 +125,32 @@ const initFeaturesSlider = () => {
       initialSlide: 2,
     });
   }
-}
+  return null;
+};
+const initFeaturesSlider = () => {
+  let swiper = null;
+  const isValid = () => {
+    const desktopWidth = window.matchMedia('(min-width: 1199px)');
+    return desktopWidth.matches;
+  };
+
+  if (isValid()) {
+    swiper = createFeaturesSlider();
+  }
+
+  window.addEventListener('resize', () => {
+    if (isValid()) {
+      if (!swiper) {
+        swiper = createFeaturesSlider();
+      }
+    } else {
+      if (swiper) {
+        swiper.destroy();
+        swiper = null;
+      }
+    }
+  });
+};
 const initGallerySlider = () => {
   if (gallerySlider) {
     const swiper = new Swiper(gallerySlider, {

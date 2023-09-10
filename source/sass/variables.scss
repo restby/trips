@@ -8,8 +8,8 @@ $text-active: #1c3374;
 
 $color-default-black: #000000;
 $color-default-white: #ffffff;
-$color-default-dark: rgba(0, 0, 0, 0.50);
-$color-default-light: rgba(255, 255, 255, 0.50);
+$color-default-dark: rgba(0, 0, 0, 0.5);
+$color-default-light: rgba(255, 255, 255, 0.5);
 $color-dark: #2d383f;
 $color-active: #1c3374;
 $color-main: #0266c1;
@@ -22,8 +22,7 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Gradient
 
 // $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$black-to-right: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.00) 100%);
-$black-to-bottom: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 61.90%, rgba(0, 0, 0, 0.00) 100%);
+$black-to-right: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
 
 // Typography
 // ---------------------------------
