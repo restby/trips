@@ -4,7 +4,12 @@ import {editInputsPlaceholder} from './modules/form-validate/form-fields';
 import {Burger} from './modules/header/burger';
 import {playVideo} from './modules/video-player';
 import {playAudio} from './modules/audio-player';
-import {initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider, initGallerySlider} from './vendor/init-swiper';
+import {initHeroSlider} from './modules/initHeroSlider';
+import {initToursSlider} from './modules/initToursSlider';
+import {initEducationSlider} from './modules/initEducationSlider';
+import {initReviewsSlider} from './modules/initReviewsSlider';
+import {initFeaturesSlider} from './modules/initFeaturesSlider';
+import {initGallerySlider} from './modules/initGallerySlider';
 import {initMap} from './vendor/init-leaflet';
 // ---------------------------------
 

@@ -2,7 +2,6 @@
   min-height: 800px;
   padding-top: 313px;
   margin-bottom: 84px;
-  background-color: #5f7c52;
   position: relative;
 
   @include vp-1199 {
@@ -19,6 +18,8 @@
 
 .question__img-container {
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   height: 100%;
   position: absolute;
   top: 0;
@@ -26,6 +27,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  background-color: #5f7c52;
 
   & img {
     height: 100%;

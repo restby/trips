@@ -226,8 +226,72 @@
                       </div>
                       <div class="hero-slide__col hero-slide__col--right">
                         <div class="hero-slide__audio-container audio">
-                          <iframe width="340" height="220" title="Подкаст: Про код"
-                            src="https://music.yandex.ru/iframe/#track/112912322/25474374"></iframe>
+                          <div class="audio__player" data-id="audio"
+                            data-src="https://music.yandex.ru/iframe/#album/25474374">
+                            <div class="audio__row audio__row--info">
+                              <div class="audio__track-info">
+                                <h3 class="audio__track-title">Алтай</h3>
+                                <span class="audio__track-author">Lifetour</span>
+                              </div>
+                              <div class="audio__track-buttons">
+                                <button class="audio__btn audio__btn--favorites audio__player-btn" type="button"
+                                  aria-label="Добавить в избранное.">
+                                  <svg aria-hidden="true" focusable="false" width="19" height="19">
+                                    <use href="img/sprite.svg#icon-ap-heart"></use>
+                                  </svg>
+                                </button>
+                                <button class="audio__btn audio__btn--share audio__player-btn" type="button"
+                                  aria-label="Поделиться.">
+                                  <svg aria-hidden="true" focusable="false" width="19" height="19">
+                                    <use href="img/sprite.svg#icon-ap-share"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="audio__row audio__row--bar">
+                              <div class="audio__scale">
+                                <div class="audio__bar">
+                                  <button class="audio__point" type="button" aria-label="Отметка по времени."></button>
+                                </div>
+                              </div>
+                              <span class="audio__time audio__time--passed">2:30</span>
+                              <span class="audio__time audio__time--all">4:16</span>
+                            </div>
+                            <div class="audio__row audio__row--controls">
+                              <button class="audio__control audio__control--shuffle audio__player-btn" type="button"
+                                aria-label="В случайном порядке.">
+                                <svg aria-hidden="true" focusable="false" width="19" height="19">
+                                  <use href="img/sprite.svg#icon-ap-shuffle"></use>
+                                </svg>
+                              </button>
+                              <div class="audio__controls">
+                                <button class="audio__control audio__control--prev audio__player-btn" type="button"
+                                  aria-label="Предыдущий трек.">
+                                  <svg aria-hidden="true" focusable="false" width="22" height="22">
+                                    <use href="img/sprite.svg#icon-ap-prev"></use>
+                                  </svg>
+                                </button>
+                                <button class="audio__control audio__control--play audio__player-btn" type="button"
+                                  aria-label="Воспроизвести трек." data-audio__play>
+                                  <svg aria-hidden="true" focusable="false" width="47" height="47">
+                                    <use href="img/sprite.svg#icon-ap-play"></use>
+                                  </svg>
+                                </button>
+                                <button class="audio__control audio__control--next audio__player-btn" type="button"
+                                  aria-label="Следующий трек.">
+                                  <svg aria-hidden="true" focusable="false" width="22" height="22">
+                                    <use href="img/sprite.svg#icon-ap-next"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <button class="audio__control audio__control--repeat audio__player-btn" type="button"
+                                aria-label="повторять трек.">
+                                <svg aria-hidden="true" focusable="false" width="19" height="19">
+                                  <use href="img/sprite.svg#icon-ap-repeat"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -517,8 +581,8 @@
                     <div class="education-slide__content">
                       <h4 class="education-slide__title">Александр
                         Прокофьев</h4>
-                      <a class="education-slide__link social-link" href="#"><svg aria-hidden="true" focusable="false"
-                          width="14" height="8">
+                      <a class="education-slide__link social-link" href="#" aria-label="ВКонтакте"><svg
+                          aria-hidden="true" focusable="false" width="14" height="8">
                           <use href="img/sprite.svg#icon-vk"></use>
                         </svg></a>
                       <p class="education-slide__descr">Строгий и&nbsp;внимательный инструктор, веселый
@@ -549,8 +613,8 @@
                     </div>
                     <div class="education-slide__content">
                       <h4 class="education-slide__title">Светлана Афиногенова</h4>
-                      <a class="education-slide__link social-link" href="#"><svg aria-hidden="true" focusable="false"
-                          width="14" height="8">
+                      <a class="education-slide__link social-link" href="#" aria-label="ВКонтакте"><svg
+                          aria-hidden="true" focusable="false" width="14" height="8">
                           <use href="img/sprite.svg#icon-vk"></use>
                         </svg></a>
                       <p class="education-slide__descr">Видеть мир вокруг, познавать его опасности, находить друг
@@ -583,8 +647,8 @@
                     <div class="education-slide__content">
                       <h4 class="education-slide__title">Надежда
                         Колесниченко</h4>
-                      <a class="education-slide__link social-link" href="#"><svg aria-hidden="true" focusable="false"
-                          width="14" height="8">
+                      <a class="education-slide__link social-link" href="#" aria-label="ВКонтакте"><svg
+                          aria-hidden="true" focusable="false" width="14" height="8">
                           <use href="img/sprite.svg#icon-vk"></use>
                         </svg></a>
                       <p class="education-slide__descr">Участники говорят, что Надежда ответственная, приятная
@@ -617,8 +681,8 @@
                     <div class="education-slide__content">
                       <h4 class="education-slide__title">Федор
                         Кайгородов</h4>
-                      <a class="education-slide__link social-link" href="#"><svg aria-hidden="true" focusable="false"
-                          width="14" height="8">
+                      <a class="education-slide__link social-link" href="#" aria-label="ВКонтакте"><svg
+                          aria-hidden="true" focusable="false" width="14" height="8">
                           <use href="img/sprite.svg#icon-vk"></use>
                         </svg></a>
                       <p class="education-slide__descr">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
@@ -651,8 +715,8 @@
                     <div class="education-slide__content">
                       <h4 class="education-slide__title">Федор
                         Кайгородов</h4>
-                      <a class="education-slide__link social-link" href="#"><svg aria-hidden="true" focusable="false"
-                          width="14" height="8">
+                      <a class="education-slide__link social-link" href="#" aria-label="ВКонтакте"><svg
+                          aria-hidden="true" focusable="false" width="14" height="8">
                           <use href="img/sprite.svg#icon-vk"></use>
                         </svg></a>
                       <p class="education-slide__descr">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
@@ -1261,21 +1325,21 @@
             </div>
             <ul class="page-footer__social-list social">
               <li>
-                <a class="social-link" href="#" aria-label="вконтакте">
+                <a class="social-link" href="#" aria-label="ВКонтакте">
                   <svg aria-hidden="true" focusable="false" width="16" height="9">
                     <use href="img/sprite.svg#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-link" href="#" aria-label="однокласники">
+                <a class="social-link" href="#" aria-label="Одноклассники">
                   <svg aria-hidden="true" focusable="false" width="9" height="16">
                     <use href="img/sprite.svg#icon-ok"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-link" href="#" aria-label="reddit">
+                <a class="social-link" href="#" aria-label="Reddit">
                   <svg aria-hidden="true" focusable="false" width="14" height="15">
                     <use href="img/sprite.svg#icon-reddit"></use>
                   </svg>

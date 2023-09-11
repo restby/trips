@@ -1,25 +1,9 @@
-const heroSlider = document.querySelector('[data-hero__slider]');
 const toursSlider = document.querySelector('[data-tours__slider]');
 const educationSlider = document.querySelector('[data-education__slider]');
 const reviewsSlider = document.querySelector('[data-reviews__slider]');
 const featuresSlider = document.querySelector('[data-features__slider]');
 const gallerySlider = document.querySelector('[data-gallery__slider]');
 
-const initHeroSlider = () => {
-  if (heroSlider) {
-    const swiper = new Swiper(heroSlider, {
-      simulateTouch: false,
-      watchOverflow: true,
-      speed: 500,
-      loop: true,
-      autoHeight: true,
-      pagination: {
-        el: ".hero__slider-pagination",
-        clickable: true,
-      },
-    });
-  }
-}
 const initToursSlider = () => {
   if (toursSlider) {
     const swiper = new Swiper(toursSlider, {
@@ -46,11 +30,11 @@ const initToursSlider = () => {
         1199: {
           slidesPerView: 3,
           spaceBetween: 30,
-        }
+        },
       },
     });
   }
-}
+};
 const initEducationSlider = () => {
   if (educationSlider) {
     const swiper = new Swiper(educationSlider, {
@@ -77,11 +61,11 @@ const initEducationSlider = () => {
         1199: {
           slidesPerView: 4,
           spaceBetween: 10,
-        }
+        },
       },
     });
   }
-}
+};
 const initReviewsSlider = () => {
   if (reviewsSlider) {
     const swiper = new Swiper(reviewsSlider, {
@@ -101,11 +85,11 @@ const initReviewsSlider = () => {
         },
         1199: {
           spaceBetween: 30,
-        }
+        },
       },
     });
   }
-}
+};
 const createFeaturesSlider = () => {
   if (featuresSlider) {
     return new Swiper(featuresSlider, {
@@ -175,9 +159,9 @@ const initGallerySlider = () => {
 
         1199: {
           spaceBetween: 5,
-        }
+        },
       },
     });
   }
-}
-export { initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider, initGallerySlider }
+};
+export {initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider, initGallerySlider};

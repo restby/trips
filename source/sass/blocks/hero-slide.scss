@@ -179,9 +179,9 @@
   }
 }
 
+.hero-slide__audio-container,
 .hero-slide__video-wrapper,
-.hero-slide__img-wrapper,
-.hero-slide__audio-container {
+.hero-slide__img-wrapper {
   position: absolute;
   z-index: 3;
   right: 0;
@@ -231,14 +231,6 @@
   width: 340px;
   height: 220px;
   top: 37.6%;
-
-  & iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 
   @include vp-1199 {
     margin: 0 auto;

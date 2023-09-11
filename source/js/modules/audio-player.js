@@ -1,21 +1,17 @@
 const playAudio = () => {
-  if (document.querySelector('[data-id="video"]')) {
-    const video = document.querySelector('[data-id="video"]');
-    const videoBtnPlay = document.querySelector('.video__btn');
-    video.addEventListener('click', () => {
+  if (document.querySelector('[data-id="audio"]')) {
+    const audioPlayer = document.querySelector('[data-id="audio"]');
 
-      if (video.hasAttribute('data-state')) {
-        return;
-      }
+    const audioButton = audioPlayer.querySelector('[data-audio__play]');
 
-      video.dataset.state = 'ready';
-      const src = video.dataset.src;
-      video.insertAdjacentHTML('beforeend', '<iframe src="' + src + '" title="Бесплатные интерактивные онлайн-курсы." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+    const iframe = `<iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220" src="${audioPlayer.dataset.src}">Слушайте <a href='${audioPlayer.dataset.src}'>Про код</a> на Яндекс Музыке</iframe>`;
 
-      video.classList.toggle('video__bg-hide');
-      videoBtnPlay.classList.toggle('video__btn--hide');
-    });
+    audioButton.addEventListener('click', () => {
+      audioPlayer.insertAdjacentHTML('beforeend', iframe);
+
+    }, {once: true});
   }
+  return null;
 };
 
 export {playAudio};
