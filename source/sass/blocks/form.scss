@@ -43,6 +43,25 @@
       margin-top: 0;
       min-height: 52px;
     }
+
+    @include hover-focus {
+      outline: none;
+      color: $text-active;
+      border: 1px solid $color-active;
+      background-color: $color-default-white;
+
+      @include active {
+        color: $text-light;
+        border: 1px solid $color-active;
+        background-color: $color-active;
+      }
+    }
+
+    &:disabled {
+      color: $text-light;
+      pointer-events: none;
+      background: rgba(2, 102, 193, 0.1);
+    }
   }
 }
 
