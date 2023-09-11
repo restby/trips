@@ -2,7 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {editInputsPlaceholder} from './modules/form-validate/form-fields';
 import {Burger} from './modules/header/burger';
-import {play} from './modules/video-player';
+import {playVideo} from './modules/video-player';
+import {playAudio} from './modules/audio-player';
 import {initHeroSlider, initToursSlider, initEducationSlider, initReviewsSlider, initFeaturesSlider, initGallerySlider} from './vendor/init-swiper';
 import {initMap} from './vendor/init-leaflet';
 // ---------------------------------
@@ -29,7 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     editInputsPlaceholder();
     initToursSlider();
-    play();
+    playVideo();
+    playAudio();
     initEducationSlider();
     initReviewsSlider();
     initFeaturesSlider();

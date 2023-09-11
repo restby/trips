@@ -1,4 +1,4 @@
-const playVideo = () => {
+const playAudio = () => {
   if (document.querySelector('[data-id="video"]')) {
     const video = document.querySelector('[data-id="video"]');
     const videoBtnPlay = document.querySelector('.video__btn');
@@ -18,4 +18,4 @@ const playVideo = () => {
   }
 };
 
-export {playVideo};
+export {playAudio};
