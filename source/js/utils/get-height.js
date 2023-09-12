@@ -10,7 +10,6 @@ const getHeight = () => {
     };
 
     const observer = new MutationObserver(setHeight);
-
     observer.observe(headerElement, {
       childList: true,
       subtree: true,
