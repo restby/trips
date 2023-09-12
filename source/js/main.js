@@ -1,27 +1,31 @@
-import { Form } from './modules/form-validate/form';
-import { editInputsPlaceholder } from './modules/form-validate/form-fields';
-import { Burger } from './modules/header/burger';
-import { playVideo } from './modules/video-player';
-import { playAudio } from './modules/audio-player';
-import { initHeroSlider } from './modules/initHeroSlider';
-import { initToursSlider } from './modules/initToursSlider';
-import { initEducationSlider } from './modules/initEducationSlider';
-import { initReviewsSlider } from './modules/initReviewsSlider';
-import { initFeaturesSlider } from './modules/initFeaturesSlider';
-import { initGallerySlider } from './modules/initGallerySlider';
-import { initMap } from './modules/initMap';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {Form} from './modules/form-validate/form';
+import {editInputsPlaceholder} from './modules/form-validate/form-fields';
+import {Burger} from './modules/header/burger';
+import {playVideo} from './modules/video-player';
+import {playAudio} from './modules/audio-player';
+import {initHeroSlider} from './modules/initHeroSlider';
+import {initToursSlider} from './modules/initToursSlider';
+import {initEducationSlider} from './modules/initEducationSlider';
+import {initReviewsSlider} from './modules/initReviewsSlider';
+import {initFeaturesSlider} from './modules/initFeaturesSlider';
+import {initGallerySlider} from './modules/initGallerySlider';
+import {initMap} from './modules/initMap';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+  iosVhFix();
 
   const burger = new Burger();
   burger.init();
   initHeroSlider();
-  initToursSlider();
-
+  initReviewsSlider();
+  initFeaturesSlider();
+  initGallerySlider();
+  initMap();
   // Modules
   // ---------------------------------
 
@@ -34,11 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     editInputsPlaceholder();
+    initToursSlider();
     initEducationSlider();
-    initReviewsSlider();
-    initFeaturesSlider();
-    initGallerySlider();
-    initMap();
   });
 });
 
