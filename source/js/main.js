@@ -10,7 +10,7 @@ import {initEducationSlider} from './modules/initEducationSlider';
 import {initReviewsSlider} from './modules/initReviewsSlider';
 import {initFeaturesSlider} from './modules/initFeaturesSlider';
 import {initGallerySlider} from './modules/initGallerySlider';
-import {initMap} from './vendor/init-leaflet';
+import {initMap} from './modules/initMap';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

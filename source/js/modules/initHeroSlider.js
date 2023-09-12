@@ -1,5 +1,4 @@
 import Swiper from '../vendor/swiper';
-import {isMobileDevice} from '../utils/is-mobile-device';
 
 const initHeroSlider = () => {
   const heroSlider = document.querySelector('[data-hero__slider]');
@@ -17,7 +16,6 @@ const initHeroSlider = () => {
         loop: false,
       },
     },
-    allowTouchMove: isMobileDevice(),
     pagination: {
       el: '.hero__slider-pagination',
       clickable: true,
