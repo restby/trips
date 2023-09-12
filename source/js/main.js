@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
   const burger = new Burger();
   burger.init();
   initHeroSlider();
