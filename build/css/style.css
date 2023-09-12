@@ -2217,6 +2217,7 @@ button,
 
 .wrapper {
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2297,11 +2298,6 @@ button,
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.wrapper {
-  position: relative;
-  overflow: hidden;
 }
 
 .section-title {
