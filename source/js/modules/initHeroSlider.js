@@ -15,6 +15,9 @@ const initHeroSlider = () => {
       768: {
         loop: false,
       },
+      1199: {
+        slidesPerView: 1,
+      },
     },
     pagination: {
       el: '.hero__slider-pagination',

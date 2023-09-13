@@ -1,4 +1,7 @@
-.page-header {
+.page-header__container {
+  position: relative;
+  z-index: 30;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   padding-top: 41px;
 
   @include vp-1199 {
@@ -8,12 +11,6 @@
   @include vp-767 {
     padding-top: 8px;
   }
-}
-
-.page-header__container {
-  position: relative;
-  z-index: 30;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 
   &.is-open .page-header__logo svg {
     color: $text-dark;

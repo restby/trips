@@ -1,6 +1,5 @@
 .hero-slide {
   background-color: #adc7dc;
-  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 
@@ -56,10 +55,16 @@
     flex-direction: column;
     min-height: 538px;
     height: 100%;
+    padding-top: 79px;
 
     @include vp-1199 {
+      padding-top: 100px;
       align-items: center;
       min-height: 282px;
+    }
+
+    @include vp-767 {
+      padding-top: 69px;
     }
   }
 }

@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const burger = new Burger();
   burger.init();
-  // getHeight();
+  getHeight();
   initHeroSlider();
   initReviewsSlider();
   initFeaturesSlider();

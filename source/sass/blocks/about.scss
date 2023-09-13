@@ -1,7 +1,6 @@
 .about {
   display: flex;
   justify-content: center;
-  column-gap: 30px;
   margin-bottom: 41px;
   position: relative;
 
@@ -10,8 +9,9 @@
   }
 
   @include vp-767 {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    column-gap: 0;
     margin-bottom: 19px;
   }
 
@@ -50,7 +50,7 @@
 
 .about__col {
   width: 100%;
-  max-width: 705px;
+  max-width: 50%;
 
   &--img {
     overflow: hidden;
@@ -83,13 +83,13 @@
   }
 
   &--text {
+    padding-left: 16px;
     padding-top: 36px;
     padding-right: 120px;
 
     @include vp-1199 {
       padding-right: 45px;
       padding-top: 0;
-      padding-left: 16px;
     }
 
     @include vp-767 {
@@ -100,6 +100,7 @@
 }
 
 .about__title {
+  max-width: 705px;
   margin-bottom: 56px;
 
   @include vp-1199 {
@@ -108,12 +109,14 @@
 }
 
 .about__subtitle {
+  max-width: 705px;
   margin-bottom: 16px;
 }
 
 .about__descr {
   margin: 0;
   margin-bottom: 30px;
+  max-width: 705px;
   color: $text-dark;
   font-size: 14px;
   font-weight: 400;
