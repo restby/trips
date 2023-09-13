@@ -8,8 +8,8 @@ const initHeroSlider = () => {
   return new Swiper(heroSlider, {
     simulateTouch: false,
     watchOverflow: true,
-    speed: 500,
-    autoHeight: true,
+    speed: 300,
+    // autoHeight: true,
     loop: true,
     breakpoints: {
       768: {

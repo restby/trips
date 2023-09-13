@@ -7,7 +7,7 @@ const initGallerySlider = () => {
   return new Swiper(gallerySlider, {
     simulateTouch: false,
     grabCursor: false,
-    watchOverflow: true,
+    // watchOverflow: true,
     speed: 500,
     navigation: {
       nextEl: '.gallery__arrow--next',

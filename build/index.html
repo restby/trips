@@ -23,7 +23,7 @@
 
   <body>
     <div class="wrapper webp">
-      <header class="page-header">
+      <header class="page-header" data-header-element>
         <div class="page-header__container" data-header>
           <div class="container">
             <div class="page-header__wrapper">
@@ -102,8 +102,8 @@
                         srcset="img/hero/hero-1-desktop@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
                     </picture>
                   </div>
-                  <div class="container" data-hero-content>
-                    <div class="hero-slide__row">
+                  <div class="container">
+                    <div class="hero-slide__row" data-hero-content>
                       <div class="hero-slide__col hero-slide__col--left">
                         <h3 class="hero-slide__title">Захватывающие вершины Кавказа</h3>
                         <p class="hero-slide__descr">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через
@@ -1175,6 +1175,15 @@
                       srcset="img/gallery/img-6-desktop.webp 1x, img/gallery/img-6-desktop@2x.webp 2x">
                     <img loading="lazy" width="298" height="265" src="img/gallery/img-6-desktop.jpg"
                       srcset="img/gallery/img-6-desktop@2x.jpg 2x" alt="Фото из галлереи.">
+                  </picture>
+                </div>
+
+                <div class="gallery__slide swiper-slide gallery-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1199px)"
+                      srcset="img/gallery/img-7-desktop.webp 1x, img/gallery/img-7-desktop@2x.webp 2x">
+                    <img loading="lazy" width="275" height="449" src="img/gallery/img-7-desktop.jpg"
+                      srcset="img/gallery/img-7-desktop@2x.jpg 2x" alt="Фото из галлереи.">
                   </picture>
                 </div>
 

@@ -7,7 +7,7 @@ const createFeaturesSlider = () => {
       grabCursor: false,
       watchOverflow: true,
       speed: 500,
-      autoHeight: true,
+      // autoHeight: true,
       slidesPerView: 'auto',
       centeredSlides: true,
       loop: true,

@@ -9,7 +9,7 @@ const initToursSlider = () => {
     grabCursor: false,
     watchOverflow: true,
     speed: 500,
-    autoHeight: true,
+    // autoHeight: true,
     navigation: {
       nextEl: '.tours__arrow--next',
       prevEl: '.tours__arrow--prev',

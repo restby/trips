@@ -2546,6 +2546,13 @@ button,
 .page-header__phone {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 10px;
   max-width: 145px;
 }
@@ -4719,7 +4726,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews {
-    margin-bottom: 59px;
+    margin-bottom: 20px;
   }
 }
 
@@ -5421,6 +5428,7 @@ button,
 }
 @media (max-width: 1199px) {
   .form__container {
+    width: 100%;
     max-width: 266px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -5504,6 +5512,11 @@ button,
   width: 100%;
   max-width: 340px;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .form__field {
+    max-width: 100%;
+  }
 }
 .form__field input {
   border: 1px solid rgba(2, 102, 193, 0.1);

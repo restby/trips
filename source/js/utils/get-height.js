@@ -1,12 +1,12 @@
 const getHeight = () => {
-  if (document.querySelector('[data-header]')) {
+  if (document.querySelector('[data-header-element]')) {
     const headerElement = document.querySelector('[data-header]');
     const heroElement = document.querySelector('[data-hero]');
     const contentElement = heroElement.querySelector('[data-hero-content]');
 
     const setHeight = () => {
-      heroElement.style.marginTop = `-${headerElement.offsetHeight}px`;
-      contentElement.style.paddingTop = `${headerElement.offsetHeight}px`;
+      heroElement.style.marginTop = `-${headerElement.offsetHeight + 41}px`;
+      contentElement.style.paddingTop = `${headerElement.offsetHeight + 120}px`;
     };
 
     const observer = new MutationObserver(setHeight);

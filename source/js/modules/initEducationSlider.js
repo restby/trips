@@ -9,7 +9,7 @@ const initEducationSlider = () => {
     grabCursor: false,
     watchOverflow: true,
     speed: 500,
-    autoHeight: true,
+    // autoHeight: true,
     navigation: {
       nextEl: '.education__arrow--next',
       prevEl: '.education__arrow--prev',

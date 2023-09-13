@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {editInputsPlaceholder} from './modules/form-validate/form-fields';
 import {Burger} from './modules/header/burger';
+import {getHeight} from './utils/get-height';
 import {playVideo} from './modules/video-player';
 import {playAudio} from './modules/audio-player';
 import {initHeroSlider} from './modules/initHeroSlider';
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const burger = new Burger();
   burger.init();
+  // getHeight();
   initHeroSlider();
   initReviewsSlider();
   initFeaturesSlider();
