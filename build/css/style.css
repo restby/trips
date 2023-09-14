@@ -5620,6 +5620,10 @@ button,
     margin-bottom: 19px;
   }
 
+  .about__col {
+    max-width: 100%;
+  }
+
   .about__col--img {
     margin-bottom: 47px;
     padding-top: 0;
