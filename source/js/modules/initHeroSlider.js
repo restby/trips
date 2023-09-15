@@ -27,10 +27,10 @@ const initHeroSlider = () => {
     },
     // loop: true,
     breakpoints: {
-      768: {
+      767.5: {
         loop: false,
       },
-      1200: {
+      1199.5: {
         slidesPerView: 1,
       },
     },

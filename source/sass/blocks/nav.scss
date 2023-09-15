@@ -17,6 +17,7 @@
       visibility: hidden;
       transition: background-color 0.3s ease;
       pointer-events: none;
+      min-height: 420px;
     }
 
     .is-open & {
@@ -87,7 +88,7 @@
   @include vp-1199 {
     flex-direction: column;
     max-width: unset;
-    margin-bottom: 67px;
+    // margin-bottom: 67px;
     overflow-y: auto;
   }
 
@@ -133,15 +134,18 @@
       text-transform: uppercase;
 
       @include hover {
-        color: $text-active;
+        color: $text-dark;
+        outline: none;
+        border-bottom: 1px solid $color-dark;
 
         @include active {
-          color: $color-main;
+          color: $color-dark;
         }
       }
 
       @include focus {
-        color: $text-active;
+        color: $text-dark;
+        border: 1px solid $color-dark;
       }
     }
 

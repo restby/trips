@@ -21,11 +21,11 @@ const initGallerySlider = () => {
         spaceBetween: 3,
       },
 
-      768: {
+      767.5: {
         spaceBetween: 5,
       },
 
-      1200: {
+      1199.5: {
         spaceBetween: 5,
       },
     },

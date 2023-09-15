@@ -21,13 +21,13 @@ const initEducationSlider = () => {
         autoHeight: true,
       },
 
-      768: {
+      767.5: {
         slidesPerView: 3,
         spaceBetween: 10,
         autoHeight: false,
       },
 
-      1200: {
+      1199.5: {
         slidesPerView: 4,
         spaceBetween: 10,
       },

@@ -34,6 +34,7 @@
 
   @include vp-1199 {
     display: flex;
+    justify-content: center;
     position: relative;
     transition: opacity 0.3s ease;
   }

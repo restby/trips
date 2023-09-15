@@ -20,11 +20,11 @@ const initReviewsSlider = () => {
         spaceBetween: 10,
         autoHeight: true,
       },
-      768: {
+      767.5: {
         spaceBetween: 10,
         autoHeight: false,
       },
-      1200: {
+      1199.5: {
         spaceBetween: 10,
       },
     },
