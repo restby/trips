@@ -2845,6 +2845,7 @@ button,
             flex-direction: column;
     max-width: unset;
     margin-bottom: 67px;
+    overflow-y: auto;
   }
 }
 @media (max-width: 767px) {

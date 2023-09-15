@@ -88,6 +88,7 @@
     flex-direction: column;
     max-width: unset;
     margin-bottom: 67px;
+    overflow-y: auto;
   }
 
   @include vp-767 {

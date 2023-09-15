@@ -1,34 +1,12 @@
 import Swiper from '../vendor/swiper';
+import {playAudio} from '../modules/audio-player';
+import {playVideo} from '../modules/video-player';
 
 const initHeroSlider = () => {
   if (!document.querySelector('[data-hero__slider]')) {
     return null;
   }
   const heroSlider = document.querySelector('[data-hero__slider]');
-
-  const pauseVideoAndReloadIframe = () => {
-    if (heroSlider.querySelector('iframe')) {
-
-      let iframe = heroSlider.querySelector('iframe');
-
-      const removeAutoplayParameter = (url) => {
-        const parts = url.split('?');
-        if (parts.length > 1) {
-          const params = parts[1].split('&');
-          const filteredParams = params.filter(function (param) {
-            return param !== 'autoplay=1';
-          });
-          return parts[0] + (filteredParams.length > 0 ? '?' + filteredParams.join('&') : '');
-        }
-        return url;
-      };
-
-      const videoUrl = iframe.src;
-      const cleanUrl = removeAutoplayParameter(videoUrl);
-
-      iframe.src = cleanUrl;
-    }
-  };
 
   return new Swiper(heroSlider, {
     simulateTouch: false,
@@ -37,8 +15,13 @@ const initHeroSlider = () => {
     autoHeight: true,
     on: {
       slideChange: () => {
-        if (heroSlider.querySelector('iframe')) {
-          pauseVideoAndReloadIframe();
+        if (document.querySelector('[data-id="audio"]').querySelector('iframe')) {
+          document.querySelector('[data-id="audio"]').querySelector('iframe').remove();
+          playAudio();
+        }
+        if (document.querySelector('[data-id="video"]').querySelector('iframe')) {
+          document.querySelector('[data-id="video"]').querySelector('iframe').remove();
+          playVideo();
         }
       },
     },
