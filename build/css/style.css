@@ -3892,6 +3892,9 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .tours-slide::before {
   position: absolute;
@@ -3908,17 +3911,12 @@ button,
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
 }
 
 .tours-slide__content {
   margin-top: auto;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4601,10 +4599,21 @@ button,
     margin-bottom: 16px;
   }
 }
+@media (max-width: 767px) {
+  .education-slide__img-container img {
+    min-width: 250px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .education-slide__img-container img {
   width: 100%;
   max-width: 238px;
   height: 212px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1199px) {
   .education-slide__img-container img {
@@ -4613,11 +4622,7 @@ button,
 }
 @media (max-width: 767px) {
   .education-slide__img-container img {
-    min-width: 250px;
-    width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
@@ -5566,6 +5571,7 @@ button,
     margin-bottom: 26px;
     font-size: 12px;
     line-height: 18px;
+    text-align: center;
   }
 }
 

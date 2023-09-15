@@ -5,6 +5,7 @@
   min-height: 412px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 
   &::before {
     position: absolute;
@@ -21,18 +22,13 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
   }
 }
 
 .tours-slide__content {
   margin-top: auto;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 3;
   display: flex;
   flex-direction: column;
