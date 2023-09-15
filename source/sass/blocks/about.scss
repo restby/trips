@@ -1,7 +1,7 @@
 .about {
   display: flex;
-  justify-content: center;
-  margin-bottom: 41px;
+  // justify-content: center;
+  margin-bottom: 39px;
   position: relative;
 
   @include vp-1199 {
@@ -57,6 +57,7 @@
   }
 
   &--img {
+    display: flex;
     overflow: hidden;
 
     @include vp-1199 {
@@ -69,8 +70,10 @@
     }
 
     & img {
+      margin-left: auto;
       max-width: none;
-      width: 808px;
+      width: auto;
+      // width: 808px;
       height: 474px;
 
       @include vp-1199 {

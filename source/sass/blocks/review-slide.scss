@@ -1,12 +1,16 @@
 .review-slide {
-  max-width: 790px;
+  height: auto;
+  max-width: 810px;
+  min-height: 293px;
 
   @include vp-1199 {
-    max-width: 560px;
+    max-width: 580px;
+    min-height: 277px;
   }
 
   @include vp-767 {
     max-width: 100%;
+    min-height: 466px;
   }
 }
 
@@ -15,20 +19,17 @@
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   margin: 10px;
   padding: 20px;
-  padding-right: 40px;
-  min-height: 293px;
+  padding-right: 20px;
   display: flex;
   column-gap: 30px;
+  height: calc(100% - 20px);
 
   @include vp-1199 {
-    min-height: 277px;
-    padding-right: 30px;
+    padding-right: 20px;
   }
 
   @include vp-767 {
-    min-height: 466px;
     flex-direction: column;
-    padding-right: 20px;
   }
 }
 
@@ -59,21 +60,28 @@
 .review-slide__content {
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
+  padding-top: 14px;
 
   @include vp-1199 {
-    padding-top: 3px;
+    padding-top: 2px;
+  }
+
+  @include vp-767 {
+    padding-top: 5px;
   }
 
   & p {
     margin: 0;
+    margin-bottom: 10px;
     color: $text-dark;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 
-    &:first-child {
-      margin-bottom: 10px;
+    &:last-of-type {
+      @include vp-767 {
+        margin-bottom: 15px;
+      }
     }
 
     @include vp-1199 {
@@ -82,8 +90,37 @@
     }
   }
 
-  & span {
+  .review-slide__inner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    min-height: 239px;
+
+    @include vp-1199 {
+      min-height: 235px;
+    }
+
+    @include vp-767 {
+      min-height: auto;
+    }
+  }
+
+  .review-slide__author {
     margin-top: auto;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+
+    @include vp-1199 {
+      margin-bottom: 3px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 0;
+    }
+  }
+
+  & span {
     margin-bottom: 8px;
     color: $text-dark;
     font-size: 13px;
@@ -91,6 +128,7 @@
     line-height: 13px;
 
     @include vp-1199 {
+      margin-bottom: 7px;
       font-size: 12px;
       line-height: normal;
     }

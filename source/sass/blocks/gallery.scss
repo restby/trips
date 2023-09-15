@@ -44,9 +44,7 @@
 }
 
 .gallery__btns {
-  @include vp-1199 {
-    align-self: center;
-  }
+  align-self: center;
 
   @include vp-767 {
     align-self: flex-end;

@@ -13,6 +13,10 @@
   }
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__slider-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   opacity: 1;
   margin: 0;
@@ -42,13 +46,13 @@
   width: auto;
   text-align: right;
 
-  @media (max-width: (1200 - 1px)) {
+  @include vp-1199 {
     right: 50%;
     transform: translateX(50%);
-    bottom: 90px;
+    bottom: 8.8%;
   }
 
-  @media (max-width: (768 - 1px)) {
+  @include vp-767 {
     column-gap: 12px;
     bottom: 40px;
   }

@@ -1,4 +1,4 @@
-const baseCountryCode = '';
+const baseCountryCode = '+7';
 const baseMatrix = ' (___) ___ __ __';
 const phoneLength = baseCountryCode.length + baseMatrix.length;
 

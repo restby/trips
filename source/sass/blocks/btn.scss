@@ -11,6 +11,7 @@
   border: 1px solid $color-transparent;
   color: $text-light;
   background-color: $color-main;
+  user-select: none;
 
   @include hover-focus {
     outline: none;

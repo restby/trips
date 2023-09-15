@@ -7,7 +7,7 @@
 
   @include vp-1199 {
     width: 100%;
-    max-width: 266px;
+    max-width: 39.23%;
     flex-wrap: wrap;
     row-gap: 7px;
   }
@@ -33,6 +33,7 @@
     border: 1px solid $color-transparent;
     color: $text-light;
     background-color: $color-main;
+    user-select: none;
 
     @include vp-1199 {
       min-height: 58px;
@@ -108,7 +109,7 @@
 
     @include vp-1199 {
       min-height: 50px;
-      min-width: 266px;
+      max-width: none;
       padding-left: 15px;
       padding-right: 15px;
       font-size: 14px;
@@ -139,13 +140,14 @@
 
 .form__field .is-valid,
 .form__field .is-invalid {
-  position: absolute;
-  font-size: 12px;
-  line-height: normal;
-  font-weight: 300;
-  color: $text-light;
-  left: 0;
-  top: 70px;
+  // position: absolute;
+  // font-size: 12px;
+  // line-height: normal;
+  // font-weight: 300;
+  // color: $text-light;
+  // left: 0;
+  // top: 70px;
+  display: none;
 }
 
 .form__field .is-invalid {

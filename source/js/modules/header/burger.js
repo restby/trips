@@ -27,6 +27,7 @@ export class Burger {
     this._header.classList.add('is-open');
     this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
+    document.querySelector('[data-close-menu]').classList.toggle('wrapper__overlay--hide');
     document.addEventListener('click', this._onDocumentClick);
     this._focusLock.lock('[data-header]');
     if (window.ls) {
@@ -41,6 +42,7 @@ export class Burger {
     this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
     document.removeEventListener('click', this._onDocumentClick);
+    document.querySelector('[data-close-menu]').classList.toggle('wrapper__overlay--hide');
     if (window.ls) {
       window.ls.start();
     }
@@ -60,9 +62,23 @@ export class Burger {
     }
   }
 
+  // _onDocumentClick(evt) {
+  //   if (evt.target.hasAttribute('data-close-menu')) {
+  //     this._closeMenu();
+  //   }
+  // }
+
   _onDocumentClick(evt) {
     if (evt.target.hasAttribute('data-close-menu')) {
       this._closeMenu();
+    }
+    if (this._isMenuOpen) {
+      const closeMenuButton = evt.target.closest('[data-close-menu]');
+      const linkMenuButton = evt.target.closest('[data-link-menu]');
+
+      if (closeMenuButton || linkMenuButton) {
+        this._closeMenu();
+      }
     }
   }
 }

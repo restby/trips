@@ -7,6 +7,26 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
+  &__overlay {
+    @include vp-1199 {
+      display: none;
+      position: absolute;
+      content: "";
+      z-index: 21;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-default-dark;
+    }
+
+    &--hide {
+      display: block;
+    }
+  }
+
   .header,
   .footer {
     flex-shrink: 0;

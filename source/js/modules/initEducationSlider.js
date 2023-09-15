@@ -1,15 +1,15 @@
 import Swiper from '../vendor/swiper';
 const initEducationSlider = () => {
-  const educationSlider = document.querySelector('[data-education__slider]');
-  if (!educationSlider) {
+  if (!document.querySelector('[data-education__slider]')) {
     return null;
   }
+
+  const educationSlider = document.querySelector('[data-education__slider]');
   return new Swiper(educationSlider, {
     simulateTouch: false,
     grabCursor: false,
     watchOverflow: true,
-    speed: 500,
-    // autoHeight: true,
+    speed: 300,
     navigation: {
       nextEl: '.education__arrow--next',
       prevEl: '.education__arrow--prev',
@@ -18,14 +18,16 @@ const initEducationSlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        autoHeight: true,
       },
 
-      767: {
+      768: {
         slidesPerView: 3,
         spaceBetween: 10,
+        autoHeight: false,
       },
 
-      1199: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 10,
       },

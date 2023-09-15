@@ -61,14 +61,16 @@
 }
 
 .audio__btn {
+  padding: 0;
+
   &--favorites {
-    width: 17px;
-    height: 17px;
+    width: 19px;
+    height: 19px;
   }
 
   &--share {
-    width: 17px;
-    height: 17px;
+    width: 19px;
+    height: 19px;
   }
 
   @include hover-focus {
@@ -126,6 +128,8 @@
 }
 
 .audio__control {
+  padding: 0;
+
   @include hover-focus {
     opacity: 0.8;
 

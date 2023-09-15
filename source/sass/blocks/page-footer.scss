@@ -52,9 +52,11 @@
 }
 
 .page-footer__phone {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-top: 21px;
-  flex-shrink: 0;
 
   @include vp-1199 {
     display: none;
@@ -63,6 +65,8 @@
 
 .page-footer__social-list {
   width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
 }
 
 .page-footer__policy {
@@ -70,6 +74,8 @@
 }
 
 .page-footer__link {
+  user-select: none;
+
   &--phone {
     color: $text-dark;
     text-align: right;

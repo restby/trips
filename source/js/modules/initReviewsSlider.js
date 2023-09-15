@@ -1,26 +1,31 @@
 import Swiper from '../vendor/swiper';
 const initReviewsSlider = () => {
-  const reviewsSlider = document.querySelector('[data-reviews__slider]');
-  if (!reviewsSlider) {
+  if (!document.querySelector('[data-reviews__slider]')) {
     return null;
   }
+
+  const reviewsSlider = document.querySelector('[data-reviews__slider]');
   return new Swiper(reviewsSlider, {
     simulateTouch: false,
     grabCursor: false,
     watchOverflow: true,
-    speed: 500,
-    autoHeight: true,
+    speed: 300,
     navigation: {
       nextEl: '.reviews__arrow--next',
       prevEl: '.reviews__arrow--prev',
     },
     slidesPerView: 'auto',
     breakpoints: {
-      767: {
-        spaceBetween: 30,
+      320: {
+        spaceBetween: 10,
+        autoHeight: true,
       },
-      1199: {
-        spaceBetween: 30,
+      768: {
+        spaceBetween: 10,
+        autoHeight: false,
+      },
+      1200: {
+        spaceBetween: 10,
       },
     },
   });

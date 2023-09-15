@@ -1,14 +1,15 @@
 import Swiper from '../vendor/swiper';
 const initGallerySlider = () => {
-  const gallerySlider = document.querySelector('[data-gallery__slider]');
-  if (!gallerySlider) {
+  if (!document.querySelector('[data-gallery__slider]')) {
     return null;
   }
+
+  const gallerySlider = document.querySelector('[data-gallery__slider]');
   return new Swiper(gallerySlider, {
     simulateTouch: false,
     grabCursor: false,
-    // watchOverflow: true,
-    speed: 500,
+    watchOverflow: true,
+    speed: 300,
     navigation: {
       nextEl: '.gallery__arrow--next',
       prevEl: '.gallery__arrow--prev',
@@ -20,11 +21,11 @@ const initGallerySlider = () => {
         spaceBetween: 3,
       },
 
-      767: {
+      768: {
         spaceBetween: 5,
       },
 
-      1199: {
+      1200: {
         spaceBetween: 5,
       },
     },
