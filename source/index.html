@@ -84,7 +84,7 @@
             <div class="hero__slider swiper" data-hero__slider>
               <div class="hero__wrapper swiper-wrapper">
 
-                <div class="hero__slide swiper-slide hero-slide" tabindex="0">
+                <div class="hero__slide swiper-slide hero-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1199px)"
                       srcset="img/hero/hero-1-desktop.webp 1x, img/hero/hero-1-desktop@2x.webp 2x">
@@ -139,7 +139,7 @@
                   </div>
                 </div>
 
-                <div class="hero__slide swiper-slide hero-slide" tabindex="0">
+                <div class="hero__slide swiper-slide hero-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1199px)"
                       srcset="img/hero/hero-2-desktop.webp 1x, img/hero/hero-2-desktop@2x.webp 2x">
@@ -163,7 +163,7 @@
                         <p class="hero-slide__descr">Незабываемое приключение, во&nbsp;время которого
                           вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых
                           нетронутых уголков дикой природы в&nbsp;мире.</p>
-                        <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
+                        <a class="hero-slide__btn btn" href="#" tabindex="-1">Смотреть тур</a>
                         <div class="hero-slide__info">
                           <span class="hero-slide__text hero-slide__text--time">9&nbsp;дней/10 ночей</span>
                           <span class="hero-slide__text hero-slide__text--complexity">Средняя сложность</span>
@@ -190,7 +190,7 @@
                   </div>
                 </div>
 
-                <div class="hero__slide swiper-slide hero-slide" tabindex="0">
+                <div class="hero__slide swiper-slide hero-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1199px)"
                       srcset="img/hero/hero-3-desktop.webp 1x, img/hero/hero-3-desktop@2x.webp 2x">
@@ -214,7 +214,7 @@
                         <p class="hero-slide__descr">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение
                           с&nbsp;посещением магических и&nbsp;захватывающих
                           дух ландшафтов Алтайских гор.</p>
-                        <a class="hero-slide__btn btn" href="#">Смотреть тур</a>
+                        <a class="hero-slide__btn btn" href="#" tabindex="-1">Смотреть тур</a>
                         <div class="hero-slide__info">
                           <span class="hero-slide__text hero-slide__text--time">8&nbsp;дней/7 ночей</span>
                           <span class="hero-slide__text hero-slide__text--complexity">Легкая сложность</span>
@@ -230,14 +230,14 @@
                                 <span class="audio__track-author">Lifetour</span>
                               </div>
                               <div class="audio__track-buttons">
-                                <button class="audio__btn audio__btn--favorites audio__player-btn" type="button"
-                                  aria-label="Добавить в избранное.">
+                                <button tabindex="-1" class="audio__btn audio__btn--favorites audio__player-btn"
+                                  type="button" aria-label="Добавить в избранное.">
                                   <svg aria-hidden="true" focusable="false" width="17" height="17">
                                     <use href="img/sprite.svg#icon-ap-heart"></use>
                                   </svg>
                                 </button>
-                                <button class="audio__btn audio__btn--share audio__player-btn" type="button"
-                                  aria-label="Поделиться.">
+                                <button tabindex="-1" class="audio__btn audio__btn--share audio__player-btn"
+                                  type="button" aria-label="Поделиться.">
                                   <svg aria-hidden="true" focusable="false" width="17" height="17">
                                     <use href="img/sprite.svg#icon-ap-share"></use>
                                   </svg>
@@ -247,41 +247,42 @@
                             <div class="audio__row audio__row--bar">
                               <div class="audio__scale">
                                 <div class="audio__bar">
-                                  <button class="audio__point" type="button" aria-label="Отметка по времени."></button>
+                                  <button tabindex="-1" class="audio__point" type="button"
+                                    aria-label="Отметка по времени."></button>
                                 </div>
                               </div>
                               <span class="audio__time audio__time--passed">2:30</span>
                               <span class="audio__time audio__time--all">4:16</span>
                             </div>
                             <div class="audio__row audio__row--controls">
-                              <button class="audio__control audio__control--shuffle audio__player-btn" type="button"
-                                aria-label="В случайном порядке.">
+                              <button tabindex="-1" class="audio__control audio__control--shuffle audio__player-btn"
+                                type="button" aria-label="В случайном порядке.">
                                 <svg aria-hidden="true" focusable="false" width="25" height="25">
                                   <use href="img/sprite.svg#icon-ap-shuffle"></use>
                                 </svg>
                               </button>
                               <div class="audio__controls">
-                                <button class="audio__control audio__control--prev audio__player-btn" type="button"
-                                  aria-label="Предыдущий трек.">
+                                <button tabindex="-1" class="audio__control audio__control--prev audio__player-btn"
+                                  type="button" aria-label="Предыдущий трек.">
                                   <svg aria-hidden="true" focusable="false" width="22" height="22">
                                     <use href="img/sprite.svg#icon-ap-prev"></use>
                                   </svg>
                                 </button>
-                                <button class="audio__control audio__control--play audio__player-btn" type="button"
-                                  aria-label="Воспроизвести трек." data-audio__play>
+                                <button tabindex="-1" class="audio__control audio__control--play audio__player-btn"
+                                  type="button" aria-label="Воспроизвести трек." data-audio__play>
                                   <svg aria-hidden="true" focusable="false" width="47" height="47">
                                     <use href="img/sprite.svg#icon-ap-play"></use>
                                   </svg>
                                 </button>
-                                <button class="audio__control audio__control--next audio__player-btn" type="button"
-                                  aria-label="Следующий трек.">
+                                <button tabindex="-1" class="audio__control audio__control--next audio__player-btn"
+                                  type="button" aria-label="Следующий трек.">
                                   <svg aria-hidden="true" focusable="false" width="22" height="22">
                                     <use href="img/sprite.svg#icon-ap-next"></use>
                                   </svg>
                                 </button>
                               </div>
-                              <button class="audio__control audio__control--repeat audio__player-btn" type="button"
-                                aria-label="повторять трек.">
+                              <button tabindex="-1" class="audio__control audio__control--repeat audio__player-btn"
+                                type="button" aria-label="повторять трек.">
                                 <svg aria-hidden="true" focusable="false" width="25" height="25">
                                   <use href="img/sprite.svg#icon-ap-repeat"></use>
                                 </svg>
