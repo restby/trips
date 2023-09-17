@@ -4,8 +4,8 @@ const initToursSlider = () => {
     return null;
   }
 
-  const toursSlider = document.querySelector('[data-tours__slider]');
-  return new Swiper(toursSlider, {
+  const toursSliderElement = document.querySelector('[data-tours__slider]');
+  const toursSlider = new Swiper(toursSliderElement, {
     simulateTouch: false,
     grabCursor: false,
     watchOverflow: true,
@@ -32,5 +32,6 @@ const initToursSlider = () => {
       },
     },
   });
+  return toursSlider;
 };
 export {initToursSlider};

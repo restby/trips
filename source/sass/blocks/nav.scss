@@ -17,20 +17,23 @@
       visibility: hidden;
       transition: background-color 0.3s ease;
       pointer-events: none;
-      min-height: 420px;
+      max-height: 100vh;
+      overflow-y: auto;
     }
 
     .is-open & {
       top: 0;
-      padding-top: 123px;
+      padding-top: 49px;
+      padding-bottom: 70px;
       padding-left: 39px;
       opacity: 1;
       pointer-events: all;
       visibility: visible;
 
       @include vp-767 {
-        padding-top: 95px;
+        padding-top: 22px;
         padding-left: 9px;
+        padding-bottom: 0;
       }
 
       .nav__item {
@@ -88,8 +91,6 @@
   @include vp-1199 {
     flex-direction: column;
     max-width: unset;
-    // margin-bottom: 67px;
-    overflow-y: auto;
   }
 
   @include vp-767 {

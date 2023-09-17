@@ -4,8 +4,8 @@ const initGallerySlider = () => {
     return null;
   }
 
-  const gallerySlider = document.querySelector('[data-gallery__slider]');
-  return new Swiper(gallerySlider, {
+  const gallerySliderElement = document.querySelector('[data-gallery__slider]');
+  const gallerySlider = new Swiper(gallerySliderElement, {
     simulateTouch: false,
     grabCursor: false,
     watchOverflow: true,
@@ -30,5 +30,6 @@ const initGallerySlider = () => {
       },
     },
   });
+  return gallerySlider;
 };
 export {initGallerySlider};

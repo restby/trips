@@ -2457,6 +2457,9 @@ button,
     padding-top: 8px;
   }
 }
+.page-header__container.is-open {
+  background-color: #ffffff;
+}
 .page-header__container.is-open .page-header__logo svg {
   color: #2d383f;
 }
@@ -2766,12 +2769,14 @@ button,
     -webkit-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
     pointer-events: none;
-    min-height: 420px;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 }
 .is-open .nav--header {
   top: 0;
-  padding-top: 123px;
+  padding-top: 49px;
+  padding-bottom: 70px;
   padding-left: 39px;
   opacity: 1;
   pointer-events: all;
@@ -2779,8 +2784,9 @@ button,
 }
 @media (max-width: 767px) {
   .is-open .nav--header {
-    padding-top: 95px;
+    padding-top: 22px;
     padding-left: 9px;
+    padding-bottom: 0;
   }
 }
 .is-open .nav--header .nav__item {
@@ -2848,7 +2854,6 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: unset;
-    overflow-y: auto;
   }
 }
 @media (max-width: 767px) {
@@ -3722,7 +3727,7 @@ button,
   z-index: -1;
   width: 602px;
   height: 1364px;
-  bottom: -81.5%;
+  bottom: -114.5%;
   right: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -4146,7 +4151,7 @@ button,
 }
 
 .education {
-  margin-bottom: 90px;
+  margin-bottom: 125px;
 }
 @media (max-width: 1199px) {
   .education {
@@ -4678,10 +4683,7 @@ button,
 }
 
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 39px;
+  margin-bottom: 77px;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -4691,111 +4693,60 @@ button,
 }
 @media (max-width: 767px) {
   .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-bottom: 19px;
   }
 }
-@media (min-width: 1199px) {
-  .about::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    width: 618px;
-    height: 280px;
-    top: -13%;
-    right: 0;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 618px auto;
-    background-image: url("../../img/decor/decor-4-desktop.png");
+
+.about__img-container {
+  position: absolute;
+  z-index: -1;
+}
+.about__img-container--left {
+  bottom: -38px;
+  left: 0;
+}
+@media (max-width: 1199px) {
+  .about__img-container--left {
+    bottom: 84px;
   }
 }
-@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
-  .about::before {
-    background-image: url("../../img/decor/decor-4-desktop@2x.png");
+@media (max-width: 767px) {
+  .about__img-container--left {
+    top: 0;
+    bottom: auto;
   }
 }
-@media (min-width: 1199px) {
-  .webp .about::before {
-    background-image: url("../../img/decor/decor-4-desktop.webp");
-  }
+.about__img-container--right {
+  right: 0;
+  top: -202px;
 }
-@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
-  .webp .about::before {
-    background-image: url("../../img/decor/decor-4-desktop@2x.webp");
+@media (max-width: 1199px) {
+  .about__img-container--right {
+    display: none;
   }
 }
 
-.about__col {
-  width: 100%;
-  max-width: 50%;
-}
-@media (max-width: 767px) {
-  .about__col {
-    max-width: 100%;
-  }
-}
-.about__col--img {
+.about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about__wrapper {
+  max-width: calc(41vw - 5px);
 }
 @media (max-width: 1199px) {
-  .about__col--img {
-    padding-top: 7px;
+  .about__wrapper {
+    max-width: 42vw;
   }
 }
 @media (max-width: 767px) {
-  .about__col--img {
-    margin-bottom: 47px;
-    padding-top: 0;
-  }
-}
-.about__col--img img {
-  margin-left: auto;
-  max-width: none;
-  width: auto;
-  height: 474px;
-}
-@media (max-width: 1199px) {
-  .about__col--img img {
-    width: 475px;
-    height: 402px;
-  }
-}
-@media (max-width: 767px) {
-  .about__col--img img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-.about__col--text {
-  padding-left: 16px;
-  padding-top: 36px;
-  padding-right: 120px;
-}
-@media (max-width: 1199px) {
-  .about__col--text {
-    padding-right: 45px;
-    padding-top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .about__col--text {
-    padding-left: 15px;
-    padding-right: 15px;
+  .about__wrapper {
+    max-width: 100%;
+    padding-top: 449px;
   }
 }
 
@@ -4840,7 +4791,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews {
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 }
 
@@ -4936,6 +4887,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
 }
 
@@ -4945,7 +4897,7 @@ button,
 }
 @media (max-width: 767px) {
   .review-slide__img-container {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 }
 .review-slide__img-container img {
@@ -5085,7 +5037,8 @@ button,
 }
 @media (max-width: 767px) {
   .features {
-    margin-bottom: 57px;
+    padding-top: 23px;
+    margin-bottom: 62px;
   }
 }
 @media (min-width: 1199px) {
@@ -5108,10 +5061,12 @@ button,
     background-image: url("../../img/decor/decor-5-desktop@2x.png");
   }
 }
-.webp .features::after {
-  background-image: url("../../img/decor/decor-6-desktop.webp");
+@media (min-width: 1199px) {
+  .webp .features::after {
+    background-image: url("../../img/decor/decor-6-desktop.webp");
+  }
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
   .webp .features::after {
     background-image: url("../../img/decor/decor-6-desktop@2x.webp");
   }
@@ -5126,20 +5081,22 @@ button,
     background-image: url("../../img/decor/decor-5-desktop@2x.webp");
   }
 }
-.features::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  width: 602px;
-  height: 263px;
-  top: -10.5%;
-  right: 0;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 602px auto;
-  background-image: url("../../img/decor/decor-6-desktop.png");
+@media (min-width: 1199px) {
+  .features::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 602px;
+    height: 263px;
+    top: -10.5%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 602px auto;
+    background-image: url("../../img/decor/decor-6-desktop.png");
+  }
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
   .features::after {
     background-image: url("../../img/decor/decor-6-desktop@2x.png");
   }
@@ -5212,7 +5169,11 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     row-gap: 15px;
+    height: auto;
   }
 }
 
@@ -5256,9 +5217,10 @@ button,
 @media (max-width: 767px) {
   .features-slide {
     max-width: 100%;
+    min-height: 244px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 20px;
+    padding-top: 19px;
   }
 }
 
@@ -5493,8 +5455,9 @@ button,
 }
 @media (max-width: 767px) {
   .question {
+    min-height: 621px;
     padding-top: 182px;
-    margin-bottom: 10px;
+    margin-bottom: 67px;
   }
 }
 
@@ -6084,6 +6047,7 @@ button,
   .map__container {
     width: 100%;
     min-height: 340px;
+    padding-bottom: 50%;
   }
 }
 @media (max-width: 767px) {

@@ -1,7 +1,5 @@
 .about {
-  display: flex;
-  // justify-content: center;
-  margin-bottom: 39px;
+  margin-bottom: 77px;
   position: relative;
 
   @include vp-1199 {
@@ -9,100 +7,53 @@
   }
 
   @include vp-767 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin-bottom: 19px;
   }
+}
 
-  &::before {
-    @include vp-1200 {
-      position: absolute;
-      content: "";
-      z-index: -1;
-      width: 618px;
-      height: 280px;
-      top: -13%;
-      right: 0;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: 618px auto;
-      background-image: url("../../img/decor/decor-4-desktop.png");
+.about__img-container {
+  position: absolute;
+  z-index: -1;
 
-      @include retina {
-        background-image: url("../../img/decor/decor-4-desktop@2x.png");
-      }
+  &--left {
+    bottom: -38px;
+    left: 0;
+
+    @include vp-1199 {
+      bottom: 84px;
+    }
+
+    @include vp-767 {
+      top: 0;
+      bottom: auto;
     }
   }
 
-  .webp & {
-    @include vp-1200 {
-      &::before {
-        background-image: url("../../img/decor/decor-4-desktop.webp");
+  &--right {
+    right: 0;
+    top: -202px;
 
-        @include retina {
-          background-image: url("../../img/decor/decor-4-desktop@2x.webp");
-        }
-      }
+    @include vp-1199 {
+      display: none;
     }
   }
 }
 
-.about__col {
-  width: 100%;
-  max-width: 50%;
+.about__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about__wrapper {
+  max-width: calc(41vw - 5px);
+
+  @include vp-1199 {
+    max-width: 42vw;
+  }
 
   @include vp-767 {
     max-width: 100%;
-  }
-
-  &--img {
-    display: flex;
-    overflow: hidden;
-
-    @include vp-1199 {
-      padding-top: 7px;
-    }
-
-    @include vp-767 {
-      margin-bottom: 47px;
-      padding-top: 0;
-    }
-
-    & img {
-      margin-left: auto;
-      max-width: none;
-      width: auto;
-      // width: 808px;
-      height: 474px;
-
-      @include vp-1199 {
-        width: 475px;
-        height: 402px;
-      }
-
-      @include vp-767 {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-    }
-  }
-
-  &--text {
-    padding-left: 16px;
-    padding-top: 36px;
-    padding-right: 120px;
-
-    @include vp-1199 {
-      padding-right: 45px;
-      padding-top: 0;
-    }
-
-    @include vp-767 {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+    padding-top: 449px;
   }
 }
 

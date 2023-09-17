@@ -4,8 +4,8 @@ const initEducationSlider = () => {
     return null;
   }
 
-  const educationSlider = document.querySelector('[data-education__slider]');
-  return new Swiper(educationSlider, {
+  const educationSliderElement = document.querySelector('[data-education__slider]');
+  const educationSlider = new Swiper(educationSliderElement, {
     simulateTouch: false,
     grabCursor: false,
     watchOverflow: true,
@@ -33,5 +33,6 @@ const initEducationSlider = () => {
       },
     },
   });
+  return educationSlider;
 };
 export {initEducationSlider};

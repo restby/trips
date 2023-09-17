@@ -12,6 +12,10 @@
     padding-top: 8px;
   }
 
+  &.is-open {
+    background-color: $color-default-white;
+  }
+
   &.is-open .page-header__logo svg {
     color: $text-dark;
   }

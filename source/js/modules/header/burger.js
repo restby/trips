@@ -5,6 +5,7 @@ export class Burger {
   constructor() {
     this._header = document.querySelector('[data-header]');
     this._burger = document.querySelector('[data-burger]');
+    this._navHeader = document.querySelector('[data-nav-header]');
     this._scrollLock = new ScrollLock();
     this._focusLock = new FocusLock();
     this._isMenuOpen = false;
@@ -25,6 +26,7 @@ export class Burger {
   _openMenu() {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
+    this._navHeader.style.top = `${this._header.offsetHeight}px`;
     this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
     document.querySelector('[data-close-menu]').classList.toggle('wrapper__overlay--hide');

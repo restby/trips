@@ -4,8 +4,8 @@ const initReviewsSlider = () => {
     return null;
   }
 
-  const reviewsSlider = document.querySelector('[data-reviews__slider]');
-  return new Swiper(reviewsSlider, {
+  const reviewsSliderElement = document.querySelector('[data-reviews__slider]');
+  const reviewsSlider = new Swiper(reviewsSliderElement, {
     simulateTouch: false,
     grabCursor: false,
     watchOverflow: true,
@@ -29,5 +29,6 @@ const initReviewsSlider = () => {
       },
     },
   });
+  return reviewsSlider;
 };
 export {initReviewsSlider};
