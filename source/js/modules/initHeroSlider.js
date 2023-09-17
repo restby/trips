@@ -14,8 +14,8 @@ const initHeroSlider = () => {
 
       let allSlides = document.querySelectorAll('.hero-slide');
       allSlides.forEach((slide) => {
-        slide.removeAttribute('tabindex');
-        slide.setAttribute('tabindex', '-1');
+        // slide.removeAttribute('tabindex');
+        // slide.setAttribute('tabindex', '-1');
         if (slide.querySelectorAll('a')) {
           slide.querySelectorAll('a').forEach((slideLink) => {
             slideLink.removeAttribute('tabindex');
@@ -30,8 +30,8 @@ const initHeroSlider = () => {
         }
       });
 
-      activeSlide.removeAttribute('tabindex');
-      activeSlide.setAttribute('tabindex', '0');
+      // activeSlide.removeAttribute('tabindex');
+      // activeSlide.setAttribute('tabindex', '0');
 
       if (activeSlide.querySelectorAll('a')) {
         let slideLinks = activeSlide.querySelectorAll('a');
@@ -78,11 +78,10 @@ const initHeroSlider = () => {
 
         initActiveSlide();
 
-        // if (document.querySelector('.swiper-slide-active').querySelector('a')) {
-        //   let slideLink = document.querySelector('.swiper-slide-active').querySelector('a');
-        //   // slideLink.focus();
-        //   console.log('focus');
-        // }
+        if (document.querySelector('.swiper-slide-active').querySelector('a')) {
+          let slideLink = document.querySelector('.swiper-slide-active').querySelector('a');
+          slideLink.focus();
+        }
       },
       slideChangeTransitionStart: () => {
         initActiveSlide();
