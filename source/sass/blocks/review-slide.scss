@@ -1,16 +1,18 @@
 .review-slide {
-  height: auto;
-  max-width: 810px;
-  min-height: 293px;
+  // height: auto;
+  // max-width: 810px;
+  // min-height: 293px;
+  width: 810px;
 
   @include vp-1199 {
     max-width: 580px;
-    min-height: 277px;
+    // min-height: 277px;
   }
 
   @include vp-767 {
     max-width: 100%;
-    min-height: 466px;
+    height: auto;
+    // min-height: 466px;
   }
 }
 

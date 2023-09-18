@@ -4,7 +4,7 @@ const playVideo = () => {
     const videoBtnPlay = document.querySelector('.video__btn');
     videoPlayer.addEventListener('click', () => {
 
-      const iframe = `<iframe  id="youtube-video" src="${videoPlayer.dataset.src}" title="Бесплатные интерактивные онлайн-курсы." frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+      const iframe = `<iframe id="youtube-video" src="${videoPlayer.dataset.src}" title="Бесплатные интерактивные онлайн-курсы." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
 
       videoPlayer.insertAdjacentHTML('beforeend', iframe);
 

@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {editInputsPlaceholder} from './modules/form-validate/form-fields';
 import {Burger} from './modules/header/burger';
-import {getHeight} from './utils/get-height';
+import {getHeroHeight} from './utils/getHeroHeight';
 import {playVideo} from './modules/video-player';
 import {playAudio} from './modules/audio-player';
 import {initHeroSlider} from './modules/initHeroSlider';
@@ -22,26 +22,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const burger = new Burger();
   burger.init();
-  getHeight();
+  getHeroHeight();
   initHeroSlider();
-  initReviewsSlider();
-  initFeaturesSlider();
-  initGallerySlider();
-  initMap();
+  playVideo();
+  playAudio();
+
   // Modules
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    playVideo();
-    playAudio();
+    initToursSlider();
+    initEducationSlider();
+    initReviewsSlider();
+    initFeaturesSlider();
+    initGallerySlider();
+    initMap();
     const form = new Form();
     window.form = form;
     form.init();
     editInputsPlaceholder();
-    initToursSlider();
-    initEducationSlider();
   });
 });
 

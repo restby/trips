@@ -1,4 +1,4 @@
-const getHeight = () => {
+const getHeroHeight = () => {
   if (document.querySelector('[data-header-element]')) {
     const headerElement = document.querySelector('[data-header]');
     const heroElement = document.querySelector('[data-hero]');
@@ -27,4 +27,4 @@ const getHeight = () => {
   return null;
 };
 
-export {getHeight};
+export {getHeroHeight};

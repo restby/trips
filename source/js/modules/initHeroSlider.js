@@ -14,8 +14,6 @@ const initHeroSlider = () => {
 
       let allSlides = document.querySelectorAll('.hero-slide');
       allSlides.forEach((slide) => {
-        // slide.removeAttribute('tabindex');
-        // slide.setAttribute('tabindex', '-1');
         if (slide.querySelectorAll('a')) {
           slide.querySelectorAll('a').forEach((slideLink) => {
             slideLink.removeAttribute('tabindex');
@@ -29,9 +27,6 @@ const initHeroSlider = () => {
           });
         }
       });
-
-      // activeSlide.removeAttribute('tabindex');
-      // activeSlide.setAttribute('tabindex', '0');
 
       if (activeSlide.querySelectorAll('a')) {
         let slideLinks = activeSlide.querySelectorAll('a');
@@ -93,9 +88,6 @@ const initHeroSlider = () => {
       clickable: true,
     },
   });
-  // let swiperActiveSlide = document.querySelector('.swiper-slide-active');
-  // swiperActiveSlide.removeAttribute('tabindex');
-  // swiperActiveSlide.setAttribute('tabindex', '0');
 
   return heroSlider;
 };

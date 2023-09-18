@@ -180,12 +180,14 @@
 
   &--time {
     &::before {
+      background-size: cover;
       background-image: url("../../img/svg/moon.svg");
     }
   }
 
   &--complexity {
     &::before {
+      background-size: cover;
       background-image: url("../../img/svg/level.svg");
     }
   }

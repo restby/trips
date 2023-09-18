@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/apple-icon.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <title>Путешествия</title>
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -17,7 +17,6 @@
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/rouble.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -223,7 +222,7 @@
                       <div class="hero-slide__col hero-slide__col--right">
                         <div class="hero-slide__audio-container audio">
                           <div class="audio__player" data-id="audio"
-                            data-src="https://music.yandex.ru/iframe/#album/25474374">
+                            data-src="https://music.yandex.ru/iframe/#track/112912322/25474374">
                             <div class="audio__row audio__row--info">
                               <div class="audio__track-info">
                                 <h3 class="audio__track-title">Алтай</h3>
@@ -330,30 +329,32 @@
                   <div class="tours__wrapper swiper-wrapper">
 
                     <div class="tours__slide swiper-slide tours-slide tours-slide--elbrus">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1199px)"
-                          srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 767px)"
-                          srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 767px)"
-                          srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
-                        <source media="(min-width: 1199px)"
-                          srcset="img/tours/tour-1-desktop.jpg 1x, img/tours/tour-1-desktop@2x.jpg 2x">
-                        <source media="(min-width: 767px)"
-                          srcset="img/tours/tour-1-tablet.jpg 1x, img/tours/tour-1-tablet@2x.jpg 2x">
-                        <source media="(max-width: 767px)"
-                          srcset="img/tours/tour-1-mobile.jpg 1x, img/tours/tour-1-mobile@2x.jpg 2x">
-                        <img loading="lazy" width="380" height="412" src="img/tours/tour-1-desktop.jpg"
-                          srcset="img/tours/tour-1-desktop@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
-                      </picture>
-                      <div class="tours-slide__content">
+                      <div class="tours-slide__img-container">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1199px)"
+                            srcset="img/tours/tour-1-desktop.webp 1x, img/tours/tour-1-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 767px)"
+                            srcset="img/tours/tour-1-tablet.webp 1x, img/tours/tour-1-tablet@2x.webp 2x">
+                          <source type="image/webp" media="(max-width: 767px)"
+                            srcset="img/tours/tour-1-mobile.webp 1x, img/tours/tour-1-mobile@2x.webp 2x">
+                          <source media="(min-width: 1199px)"
+                            srcset="img/tours/tour-1-desktop.jpg 1x, img/tours/tour-1-desktop@2x.jpg 2x">
+                          <source media="(min-width: 767px)"
+                            srcset="img/tours/tour-1-tablet.jpg 1x, img/tours/tour-1-tablet@2x.jpg 2x">
+                          <source media="(max-width: 767px)"
+                            srcset="img/tours/tour-1-mobile.jpg 1x, img/tours/tour-1-mobile@2x.jpg 2x">
+                          <img loading="lazy" width="380" height="412" src="img/tours/tour-1-desktop.jpg"
+                            srcset="img/tours/tour-1-desktop@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
+                        </picture>
+                      </div>
+
+                      <div class="tours-slide__content" data-slide__content>
                         <div class="tours-slide__row tours-slide__row--descr">
                           <span class="tours-slide__descr tours-slide__descr--locztion">Кавказ</span>
                           <span class="tours-slide__descr tours-slide__descr--days">4 дня</span>
                           <span class="tours-slide__descr tours-slide__descr--nights">3 ночи</span>
                         </div>
-                        <h3 class="tours-slide__title">Путешествие
-                          вокруг Эльбруса
+                        <h3 class="tours-slide__title">Путешествие вокруг Эльбруса
                         </h3>
                         <div class="tours-slide__row tours-slide__row--info">
                           <div class="tours-slide__info tours-slide__info--level">Сложность:
@@ -376,23 +377,26 @@
                     </div>
 
                     <div class="tours__slide swiper-slide tours-slide tours-slide--beluha">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1199px)"
-                          srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 767px)"
-                          srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 767px)"
-                          srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
-                        <source media="(min-width: 1199px)"
-                          srcset="img/tours/tour-2-desktop.jpg 1x, img/tours/tour-2-desktop@2x.jpg 2x">
-                        <source media="(min-width: 767px)"
-                          srcset="img/tours/tour-2-tablet.jpg 1x, img/tours/tour-2-tablet@2x.jpg 2x">
-                        <source media="(max-width: 767px)"
-                          srcset="img/tours/tour-2-mobile.jpg 1x, img/tours/tour-2-mobile@2x.jpg 2x">
-                        <img loading="lazy" width="380" height="412" src="img/tours/tour-2-desktop.jpg"
-                          srcset="img/tours/tour-1-desktop@2x.jpg 2x" alt="Путь к подножию Белухи.">
-                      </picture>
-                      <div class="tours-slide__content">
+                      <div class="tours-slide__img-container">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1199px)"
+                            srcset="img/tours/tour-2-desktop.webp 1x, img/tours/tour-2-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 767px)"
+                            srcset="img/tours/tour-2-tablet.webp 1x, img/tours/tour-2-tablet@2x.webp 2x">
+                          <source type="image/webp" media="(max-width: 767px)"
+                            srcset="img/tours/tour-2-mobile.webp 1x, img/tours/tour-2-mobile@2x.webp 2x">
+                          <source media="(min-width: 1199px)"
+                            srcset="img/tours/tour-2-desktop.jpg 1x, img/tours/tour-2-desktop@2x.jpg 2x">
+                          <source media="(min-width: 767px)"
+                            srcset="img/tours/tour-2-tablet.jpg 1x, img/tours/tour-2-tablet@2x.jpg 2x">
+                          <source media="(max-width: 767px)"
+                            srcset="img/tours/tour-2-mobile.jpg 1x, img/tours/tour-2-mobile@2x.jpg 2x">
+                          <img loading="lazy" width="380" height="412" src="img/tours/tour-2-desktop.jpg"
+                            srcset="img/tours/tour-1-desktop@2x.jpg 2x" alt="Путь к подножию Белухи.">
+                        </picture>
+                      </div>
+
+                      <div class="tours-slide__content" data-slide__content>
                         <div class="tours-slide__row tours-slide__row--descr">
                           <span class="tours-slide__descr tours-slide__descr--locztion">Алтай</span>
                           <span class="tours-slide__descr tours-slide__descr--days">14 дней</span>
@@ -420,23 +424,26 @@
                     </div>
 
                     <div class="tours__slide swiper-slide tours-slide tours-slide--fisht">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1199px)"
-                          srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 767px)"
-                          srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 767px)"
-                          srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
-                        <source media="(min-width: 1199px)"
-                          srcset="img/tours/tour-3-desktop.jpg 1x, img/tours/tour-3-desktop@2x.jpg 2x">
-                        <source media="(min-width: 767px)"
-                          srcset="img/tours/tour-3-tablet.jpg 1x, img/tours/tour-3-tablet@2x.jpg 2x">
-                        <source media="(max-width: 767px)"
-                          srcset="img/tours/tour-3-mobile.jpg 1x, img/tours/tour-3-mobile@2x.jpg 2x">
-                        <img loading="lazy" width="380" height="412" src="img/tours/tour-3-desktop.jpg"
-                          srcset="img/tours/tour-3-desktop@2x.jpg 2x" alt="Через Фишт к Черному морю.">
-                      </picture>
-                      <div class="tours-slide__content">
+                      <div class="tours-slide__img-container">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1199px)"
+                            srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 767px)"
+                            srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
+                          <source type="image/webp" media="(max-width: 767px)"
+                            srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
+                          <source media="(min-width: 1199px)"
+                            srcset="img/tours/tour-3-desktop.jpg 1x, img/tours/tour-3-desktop@2x.jpg 2x">
+                          <source media="(min-width: 767px)"
+                            srcset="img/tours/tour-3-tablet.jpg 1x, img/tours/tour-3-tablet@2x.jpg 2x">
+                          <source media="(max-width: 767px)"
+                            srcset="img/tours/tour-3-mobile.jpg 1x, img/tours/tour-3-mobile@2x.jpg 2x">
+                          <img loading="lazy" width="380" height="412" src="img/tours/tour-3-desktop.jpg"
+                            srcset="img/tours/tour-3-desktop@2x.jpg 2x" alt="Через Фишт к Черному морю.">
+                        </picture>
+                      </div>
+
+                      <div class="tours-slide__content" data-slide__content>
                         <div class="tours-slide__row tours-slide__row--descr">
                           <span class="tours-slide__descr tours-slide__descr--locztion">Адыгея</span>
                           <span class="tours-slide__descr tours-slide__descr--days">7 дней</span>
@@ -464,22 +471,25 @@
                     </div>
 
                     <div class="tours__slide swiper-slide tours-slide tours-slide--fisht">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1199px)"
-                          srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 767px)"
-                          srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 767px)"
-                          srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
-                        <source media="(min-width: 1199px)"
-                          srcset="img/tours/tour-3-desktop.jpg 1x, img/tours/tour-3-desktop@2x.jpg 2x">
-                        <source media="(min-width: 767px)"
-                          srcset="img/tours/tour-3-tablet.jpg 1x, img/tours/tour-3-tablet@2x.jpg 2x">
-                        <source media="(max-width: 767px)"
-                          srcset="img/tours/tour-3-mobile.jpg 1x, img/tours/tour-3-mobile@2x.jpg 2x">
-                        <img loading="lazy" width="380" height="412" src="img/tours/tour-3-desktop.jpg"
-                          srcset="img/tours/tour-3-desktop@2x.jpg 2x" alt="Через Фишт к Черному морю.">
-                      </picture>
+                      <div class="tours-slide__img-container">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1199px)"
+                            srcset="img/tours/tour-3-desktop.webp 1x, img/tours/tour-3-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 767px)"
+                            srcset="img/tours/tour-3-tablet.webp 1x, img/tours/tour-3-tablet@2x.webp 2x">
+                          <source type="image/webp" media="(max-width: 767px)"
+                            srcset="img/tours/tour-3-mobile.webp 1x, img/tours/tour-3-mobile@2x.webp 2x">
+                          <source media="(min-width: 1199px)"
+                            srcset="img/tours/tour-3-desktop.jpg 1x, img/tours/tour-3-desktop@2x.jpg 2x">
+                          <source media="(min-width: 767px)"
+                            srcset="img/tours/tour-3-tablet.jpg 1x, img/tours/tour-3-tablet@2x.jpg 2x">
+                          <source media="(max-width: 767px)"
+                            srcset="img/tours/tour-3-mobile.jpg 1x, img/tours/tour-3-mobile@2x.jpg 2x">
+                          <img loading="lazy" width="380" height="412" src="img/tours/tour-3-desktop.jpg"
+                            srcset="img/tours/tour-3-desktop@2x.jpg 2x" alt="Через Фишт к Черному морю.">
+                        </picture>
+                      </div>
+
                       <div class="tours-slide__content">
                         <div class="tours-slide__row tours-slide__row--descr">
                           <span class="tours-slide__descr tours-slide__descr--locztion">Адыгея</span>
