@@ -29,6 +29,7 @@ const initToursSlider = () => {
       1199.5: {
         slidesPerView: 3,
         spaceBetween: 30,
+        autoHeight: false,
       },
     },
   });

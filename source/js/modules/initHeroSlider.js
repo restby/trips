@@ -48,6 +48,7 @@ const initHeroSlider = () => {
 
   const heroSlider = new Swiper(heroSliderElement, {
     simulateTouch: false,
+    grabCursor: false,
     watchOverflow: true,
     speed: 300,
     autoHeight: true,
