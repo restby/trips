@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {editInputsPlaceholder} from './modules/form-validate/form-fields';
 import {Burger} from './modules/header/burger';
 import {getHeroHeight} from './utils/getHeroHeight';
+import {getToursHeight} from './utils/getToursHeight';
 import {playVideo} from './modules/video-player';
 import {playAudio} from './modules/audio-player';
 import {initHeroSlider} from './modules/initHeroSlider';
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   burger.init();
   getHeroHeight();
   initHeroSlider();
+  getToursHeight();
 
   // Modules
   // ---------------------------------
