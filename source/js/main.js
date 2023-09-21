@@ -24,7 +24,11 @@ window.addEventListener('DOMContentLoaded', () => {
   burger.init();
   getHeroHeight();
   initHeroSlider();
-
+  initToursSlider();
+  initEducationSlider();
+  initReviewsSlider();
+  initFeaturesSlider();
+  initGallerySlider();
   // Modules
   // ---------------------------------
 
@@ -33,11 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     playVideo();
     playAudio();
-    initToursSlider();
-    initEducationSlider();
-    initReviewsSlider();
-    initFeaturesSlider();
-    initGallerySlider();
     initMap();
     const form = new Form();
     window.form = form;

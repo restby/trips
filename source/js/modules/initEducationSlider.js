@@ -25,6 +25,7 @@ const initEducationSlider = () => {
       1199.5: {
         slidesPerView: 4,
         spaceBetween: 10,
+        autoHeight: false,
       },
     },
   });

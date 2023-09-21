@@ -21,6 +21,9 @@ const initReviewsSlider = () => {
       767.5: {
         autoHeight: false,
       },
+      1199.5: {
+        autoHeight: false,
+      },
     },
   });
   return reviewsSlider;
