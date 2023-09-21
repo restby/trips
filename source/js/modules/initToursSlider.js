@@ -7,8 +7,6 @@ const initToursSlider = () => {
   const toursSliderElement = document.querySelector('[data-tours__slider]');
   const toursSlider = new Swiper(toursSliderElement, {
     simulateTouch: false,
-    grabCursor: false,
-    watchOverflow: true,
     speed: 300,
     navigation: {
       nextEl: '.tours__arrow--next',
@@ -17,19 +15,16 @@ const initToursSlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        autoHeight: true,
       },
 
       767.5: {
         slidesPerView: 2,
         spaceBetween: 18,
-        autoHeight: false,
       },
 
       1199.5: {
         slidesPerView: 3,
         spaceBetween: 30,
-        autoHeight: false,
       },
     },
   });

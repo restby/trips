@@ -8,6 +8,7 @@
 
   @include vp-767 {
     width: 100%;
+    height: calc(100% - 20px);
   }
 }
 
@@ -27,15 +28,12 @@
 
   @include vp-767 {
     flex-direction: column;
-    height: auto;
+    // height: auto;
+    // height: calc(100% - 40px);
   }
-}
 
-.review-slide__img-container {
-  flex-shrink: 0;
-
-  @include vp-767 {
-    margin-bottom: 15px;
+  & picture {
+    flex-shrink: 0;
   }
 
   & img {
@@ -54,6 +52,30 @@
     }
   }
 }
+
+// .review-slide__img-container {
+//   flex-shrink: 0;
+
+//   @include vp-767 {
+//     margin-bottom: 15px;
+//   }
+
+//   & img {
+//     width: 258px;
+//     height: 253px;
+
+//     @include vp-1199 {
+//       width: 186px;
+//       height: 237px;
+//     }
+
+//     @include vp-767 {
+//       width: 100%;
+//       height: auto;
+//       object-fit: cover;
+//     }
+//   }
+// }
 
 .review-slide__content {
   display: flex;

@@ -4,8 +4,6 @@ const createFeaturesSlider = () => {
   if (featuresSlider) {
     return new Swiper(featuresSlider, {
       simulateTouch: false,
-      grabCursor: false,
-      watchOverflow: true,
       speed: 300,
       slidesPerView: 'auto',
       centeredSlides: true,

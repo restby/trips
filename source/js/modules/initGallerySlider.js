@@ -7,8 +7,6 @@ const initGallerySlider = () => {
   const gallerySliderElement = document.querySelector('[data-gallery__slider]');
   const gallerySlider = new Swiper(gallerySliderElement, {
     simulateTouch: false,
-    grabCursor: false,
-    watchOverflow: true,
     speed: 300,
     navigation: {
       nextEl: '.gallery__arrow--next',
