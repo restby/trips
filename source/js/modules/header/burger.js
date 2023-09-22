@@ -47,7 +47,7 @@ export class Burger {
     this._isMenuOpen = false;
     this._header.classList.remove('is-open');
     this.__overlay.style.opacity = '0';
-    this.__overlay.style.zIndex = '0';
+    this.__overlay.style.zIndex = '-1';
     this._scrollLock.enableScrolling();
     this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
