@@ -130,7 +130,7 @@
       left: 24px;
       width: 9px;
       height: 12px;
-      background-image: url("../../img/svg/pin-filled.svg");
+      background-image: url("../img/svg/pin-filled.svg");
 
       @include vp-1199 {
         left: 16px;
@@ -144,7 +144,7 @@
     }
 
     &::before {
-      background-image: url("../../img/svg/sun.svg");
+      background-image: url("../img/svg/sun.svg");
     }
   }
 
@@ -154,7 +154,7 @@
     }
 
     &::before {
-      background-image: url("../../img/svg/moon.svg");
+      background-image: url("../img/svg/moon.svg");
     }
   }
 }
@@ -235,23 +235,23 @@
     height: 12px;
   }
 
-  background-image: url("../../img/svg/star.svg");
+  background-image: url("../img/svg/star.svg");
 
   .tours-slide--elbrus & {
     &:nth-child(-n + 3) {
-      background-image: url("../../img/svg/star-filled.svg");
+      background-image: url("../img/svg/star-filled.svg");
     }
   }
 
   .tours-slide--beluha & {
     &:nth-child(-n + 2) {
-      background-image: url("../../img/svg/star-filled.svg");
+      background-image: url("../img/svg/star-filled.svg");
     }
   }
 
   .tours-slide--fisht & {
     &:nth-child(-n + 3) {
-      background-image: url("../../img/svg/star-filled.svg");
+      background-image: url("../img/svg/star-filled.svg");
     }
   }
 }

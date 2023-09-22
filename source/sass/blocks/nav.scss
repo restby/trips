@@ -110,21 +110,60 @@
   & a {
     color: $text-light;
 
-    @include hover {
-      color: $text-light;
-      outline: none;
-      border-bottom: 1px solid $color-default-white;
+    @include vp-1200 {
+      @include hover {
+        color: $text-light;
+        outline: none;
+        border-bottom: 1px solid $color-default-white;
 
-      @include active {
-        border-color: $color-transparent;
+        @include active {
+          border-color: $color-transparent;
+        }
+      }
+
+      @include focus {
+        color: $text-light;
+        outline: none;
+        border: 1px solid $color-default-white;
       }
     }
 
-    @include focus {
-      color: $text-light;
-      outline: none;
-      border: 1px solid $color-default-white;
-    }
+    // @include hover {
+    //   color: $text-light;
+    //   outline: none;
+    //   border-bottom: 1px solid $color-default-white;
+
+    //   @include active {
+    //     border-color: $color-transparent;
+    //   }
+
+    //   /**/
+    //   @include vp-1199 {
+    //     color: $text-dark;
+    //     outline: none;
+    //     border-bottom: 1px solid $color-dark;
+
+    //     @include active {
+    //       color: $color-dark;
+    //     }
+    //   }
+
+    //   /**/
+    // }
+
+    // @include focus {
+    //   color: $text-light;
+    //   outline: none;
+    //   border: 1px solid $color-default-white;
+
+    //   /**/
+    //   @include vp-1199 {
+    //     color: $text-dark;
+    //     border: 1px solid $color-dark;
+    //   }
+
+    //   /**/
+    // }
 
     @include vp-1199 {
       color: $text-dark;

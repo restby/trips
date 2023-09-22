@@ -23,10 +23,10 @@
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 705px auto;
-      background-image: url("../../img/decor/decor-5-desktop.png");
+      background-image: url("../img/decor/decor-5-desktop.png");
 
       @include retina {
-        background-image: url("../../img/decor/decor-5-desktop@2x.png");
+        background-image: url("../img/decor/decor-5-desktop@2x.png");
       }
     }
   }
@@ -34,18 +34,18 @@
   .webp & {
     @include vp-1200 {
       &::after {
-        background-image: url("../../img/decor/decor-6-desktop.webp");
+        background-image: url("../img/decor/decor-6-desktop.webp");
 
         @include retina {
-          background-image: url("../../img/decor/decor-6-desktop@2x.webp");
+          background-image: url("../img/decor/decor-6-desktop@2x.webp");
         }
       }
 
       &::before {
-        background-image: url("../../img/decor/decor-5-desktop.webp");
+        background-image: url("../img/decor/decor-5-desktop.webp");
 
         @include retina {
-          background-image: url("../../img/decor/decor-5-desktop@2x.webp");
+          background-image: url("../img/decor/decor-5-desktop@2x.webp");
         }
       }
     }
@@ -63,10 +63,10 @@
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 602px auto;
-      background-image: url("../../img/decor/decor-6-desktop.png");
+      background-image: url("../img/decor/decor-6-desktop.png");
 
       @include retina {
-        background-image: url("../../img/decor/decor-6-desktop@2x.png");
+        background-image: url("../img/decor/decor-6-desktop@2x.png");
       }
     }
   }

@@ -2019,7 +2019,7 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/Montserrat-Light.woff2") format("woff2"), url("../../fonts/Montserrat-Light.woff") format("woff");
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
 }
 
 @font-face {
@@ -2027,7 +2027,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -2035,7 +2035,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -2043,7 +2043,7 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -2051,7 +2051,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -2059,7 +2059,7 @@ button.swiper-pagination-bullet {
   font-weight: 800;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../../fonts/Montserrat-ExtraBold.woff") format("woff");
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
 }
 
 /* stylelint-disable */
@@ -2222,10 +2222,6 @@ button,
   min-height: calc(100 * var(--vh, 1vh));
 }
 
-.wrapper__overlay--hide {
-  display: block;
-}
-
 .wrapper .header,
 .wrapper .footer {
   -ms-flex-negative: 0;
@@ -2236,6 +2232,19 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 21;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .rouble {
@@ -2703,12 +2712,6 @@ button,
   color: #ffffff;
 }
 
-.nav__list--header a.focus-visible:focus {
-  color: #ffffff;
-  outline: none;
-  border: 1px solid #ffffff;
-}
-
 .nav__list--footer {
   max-width: 655px;
   -webkit-column-gap: 22px;
@@ -2896,12 +2899,12 @@ button,
 
 .hero-slide__text--time::before {
   background-size: cover;
-  background-image: url("../../img/svg/moon.svg");
+  background-image: url("../img/svg/moon.svg");
 }
 
 .hero-slide__text--complexity::before {
   background-size: cover;
-  background-image: url("../../img/svg/level.svg");
+  background-image: url("../img/svg/level.svg");
 }
 
 .hero-slide__audio-container,
@@ -2978,7 +2981,7 @@ button,
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("../../img/svg/play-def.svg");
+  background-image: url("../img/svg/play-def.svg");
 }
 
 .video__btn.focus-visible:focus {
@@ -2986,11 +2989,11 @@ button,
 }
 
 .video__btn.focus-visible:focus::after {
-  background-image: url("../../img/svg/play-hover-focus.svg");
+  background-image: url("../img/svg/play-hover-focus.svg");
 }
 
 .video__btn.focus-visible:focus:active::after {
-  background-image: url("../../img/svg/play-active.svg");
+  background-image: url("../img/svg/play-active.svg");
 }
 
 .video__btn:disabled {
@@ -2998,7 +3001,7 @@ button,
 }
 
 .video__btn:disabled::after {
-  background-image: url("../../img/svg/play-disabled.svg");
+  background-image: url("../img/svg/play-disabled.svg");
 }
 
 .audio {
@@ -3203,7 +3206,7 @@ button,
 }
 
 .webp .tours::after {
-  background-image: url("../../img/decor/decor-1-desktop.webp");
+  background-image: url("../img/decor/decor-1-desktop.webp");
 }
 
 .tours::after {
@@ -3217,7 +3220,7 @@ button,
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 602px auto;
-  background-image: url("../../img/decor/decor-1-desktop.png");
+  background-image: url("../img/decor/decor-1-desktop.png");
 }
 
 .tours__container {
@@ -3409,15 +3412,15 @@ button,
   left: 24px;
   width: 9px;
   height: 12px;
-  background-image: url("../../img/svg/pin-filled.svg");
+  background-image: url("../img/svg/pin-filled.svg");
 }
 
 .tours-slide__descr--days::before {
-  background-image: url("../../img/svg/sun.svg");
+  background-image: url("../img/svg/sun.svg");
 }
 
 .tours-slide__descr--nights::before {
-  background-image: url("../../img/svg/moon.svg");
+  background-image: url("../img/svg/moon.svg");
 }
 
 .tours-slide__title {
@@ -3480,19 +3483,19 @@ button,
 .tours-slide__star {
   width: 15px;
   height: 14px;
-  background-image: url("../../img/svg/star.svg");
+  background-image: url("../img/svg/star.svg");
 }
 
 .tours-slide--elbrus .tours-slide__star:nth-child(-n+3) {
-  background-image: url("../../img/svg/star-filled.svg");
+  background-image: url("../img/svg/star-filled.svg");
 }
 
 .tours-slide--beluha .tours-slide__star:nth-child(-n+2) {
-  background-image: url("../../img/svg/star-filled.svg");
+  background-image: url("../img/svg/star-filled.svg");
 }
 
 .tours-slide--fisht .tours-slide__star:nth-child(-n+3) {
-  background-image: url("../../img/svg/star-filled.svg");
+  background-image: url("../img/svg/star-filled.svg");
 }
 
 .education {
@@ -4299,15 +4302,15 @@ button,
 }
 
 .contacts__info-item--phone::before {
-  background-image: url("../../img/svg/phone.svg");
+  background-image: url("../img/svg/phone.svg");
 }
 
 .contacts__info-item--nail::before {
-  background-image: url("../../img/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
 }
 
 .contacts__info-item--address::before {
-  background-image: url("../../img/svg/pin-stroke.svg");
+  background-image: url("../img/svg/pin-stroke.svg");
 }
 
 .contacts__info-item span {
@@ -4517,7 +4520,25 @@ button,
   }
 */
 
+@media (min-width: 1199px) and (hover: hover) {
+  .nav__list--header a:hover:not(.focus-visible) {
+    color: #ffffff;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .nav__list--header a:hover:not(.focus-visible):active {
+    border-color: rgba(255, 255, 255, 0);
+  }
+}
+
 @media (min-width: 1199px) {
+  .nav__list--header a.focus-visible:focus {
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff;
+  }
+
   .tours::before {
     position: absolute;
     content: "";
@@ -4529,11 +4550,11 @@ button,
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 418px auto;
-    background-image: url("../../img/decor/decor-3-desktop.png");
+    background-image: url("../img/decor/decor-3-desktop.png");
   }
 
   .webp .tours::before {
-    background-image: url("../../img/decor/decor-3-desktop.webp");
+    background-image: url("../img/decor/decor-3-desktop.webp");
   }
 
   .education__info {
@@ -4560,15 +4581,15 @@ button,
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 705px auto;
-    background-image: url("../../img/decor/decor-5-desktop.png");
+    background-image: url("../img/decor/decor-5-desktop.png");
   }
 
   .webp .features::after {
-    background-image: url("../../img/decor/decor-6-desktop.webp");
+    background-image: url("../img/decor/decor-6-desktop.webp");
   }
 
   .webp .features::before {
-    background-image: url("../../img/decor/decor-5-desktop.webp");
+    background-image: url("../img/decor/decor-5-desktop.webp");
   }
 
   .features::after {
@@ -4582,51 +4603,37 @@ button,
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 602px auto;
-    background-image: url("../../img/decor/decor-6-desktop.png");
+    background-image: url("../img/decor/decor-6-desktop.png");
   }
 }
 
 @media (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1199px) and (min-resolution: 144dpi), (min-width: 1199px) and (min-resolution: 1.5dppx) {
   .tours::before {
-    background-image: url("../../img/decor/decor-3-desktop@2x.png");
+    background-image: url("../img/decor/decor-3-desktop@2x.png");
   }
 
   .webp .tours::before {
-    background-image: url("../../img/decor/decor-3-desktop@2x.webp");
+    background-image: url("../img/decor/decor-3-desktop@2x.webp");
   }
 
   .features::before {
-    background-image: url("../../img/decor/decor-5-desktop@2x.png");
+    background-image: url("../img/decor/decor-5-desktop@2x.png");
   }
 
   .webp .features::after {
-    background-image: url("../../img/decor/decor-6-desktop@2x.webp");
+    background-image: url("../img/decor/decor-6-desktop@2x.webp");
   }
 
   .webp .features::before {
-    background-image: url("../../img/decor/decor-5-desktop@2x.webp");
+    background-image: url("../img/decor/decor-5-desktop@2x.webp");
   }
 
   .features::after {
-    background-image: url("../../img/decor/decor-6-desktop@2x.png");
+    background-image: url("../img/decor/decor-6-desktop@2x.png");
   }
 }
 
 @media (max-width: 1199px) {
-  .wrapper__overlay {
-    display: none;
-    position: absolute;
-    content: "";
-    z-index: 21;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
   .container {
     padding: 0 45px;
   }
@@ -4868,14 +4875,14 @@ button,
   }
 
   .webp .tours::after {
-    background-image: url("../../img/decor/decor-1-tablet.webp");
+    background-image: url("../img/decor/decor-1-tablet.webp");
   }
 
   .tours::after {
     width: 294px;
     background-size: 294px auto;
     bottom: -114.5%;
-    background-image: url("../../img/decor/decor-1-tablet.png");
+    background-image: url("../img/decor/decor-1-tablet.png");
   }
 
   .tours__row {
@@ -5321,13 +5328,13 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px) {
   .webp .tours::after {
-    background-image: url("../../img/decor/decor-1-tablet@2x.webp");
+    background-image: url("../img/decor/decor-1-tablet@2x.webp");
   }
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .tours::after {
-    background-image: url("../../img/decor/decor-1-tablet@2x.png");
+    background-image: url("../img/decor/decor-1-tablet@2x.png");
   }
 }
 
@@ -5542,7 +5549,7 @@ button,
   }
 
   .webp .tours::after {
-    background-image: url("../../img/decor/decor-1-mobile.webp");
+    background-image: url("../img/decor/decor-1-mobile.webp");
   }
 
   .tours::after {
@@ -5550,7 +5557,7 @@ button,
     height: 595px;
     bottom: -26.5%;
     background-size: 176px auto;
-    background-image: url("../../img/decor/decor-1-mobile.png");
+    background-image: url("../img/decor/decor-1-mobile.png");
   }
 
   .tours__row {
@@ -6046,13 +6053,13 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .webp .tours::after {
-    background-image: url("../../img/decor/decor-1-mobile@2x.webp");
+    background-image: url("../img/decor/decor-1-mobile@2x.webp");
   }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .tours::after {
-    background-image: url("../../img/decor/decor-1-mobile@2x.png");
+    background-image: url("../img/decor/decor-1-mobile@2x.png");
   }
 }
 
@@ -6191,16 +6198,6 @@ button,
     opacity: 0.3;
   }
 
-  .nav__list--header a:hover:not(.focus-visible) {
-    color: #ffffff;
-    outline: none;
-    border-bottom: 1px solid #ffffff;
-  }
-
-  .nav__list--header a:hover:not(.focus-visible):active {
-    border-color: rgba(255, 255, 255, 0);
-  }
-
   .nav__list--footer a:hover:not(.focus-visible) {
     outline: none;
     border-bottom: 1px solid #2d383f;
@@ -6215,11 +6212,11 @@ button,
   }
 
   .video__btn:hover:not(.focus-visible)::after {
-    background-image: url("../../img/svg/play-hover-focus.svg");
+    background-image: url("../img/svg/play-hover-focus.svg");
   }
 
   .video__btn:hover:not(.focus-visible):active::after {
-    background-image: url("../../img/svg/play-active.svg");
+    background-image: url("../img/svg/play-active.svg");
   }
 
   .audio__btn:hover:not(.focus-visible) {
@@ -6305,10 +6302,10 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .tours::after {
-    background-image: url("../../img/decor/decor-1-desktop@2x.webp");
+    background-image: url("../img/decor/decor-1-desktop@2x.webp");
   }
 
   .tours::after {
-    background-image: url("../../img/decor/decor-1-desktop@2x.png");
+    background-image: url("../img/decor/decor-1-desktop@2x.png");
   }
 }
